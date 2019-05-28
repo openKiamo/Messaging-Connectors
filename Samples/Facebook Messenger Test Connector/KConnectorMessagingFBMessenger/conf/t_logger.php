@@ -1,6 +1,6 @@
 <?php
 
-use KiamoConnectorSampleToolsBasic\Logger ;
+use KiamoConnectorSampleToolsFB\Logger ;
 
 return [
   'behavior'          => [

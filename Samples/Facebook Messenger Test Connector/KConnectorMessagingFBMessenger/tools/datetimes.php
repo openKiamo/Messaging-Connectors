@@ -1,6 +1,6 @@
 <?php
 
-namespace KiamoConnectorSampleToolsBasic ;
+namespace KiamoConnectorSampleToolsFB ;
 
 
 use \DateTime, \DateTimeZone ;
@@ -95,6 +95,41 @@ class Datetimes
   public static function tsToDays( $ts )
   {
     return intval( $ts / self::DD_IN_SECS ) ;
+  }
+  
+  public static function datetimeToSecs( $dateStr, $format = self::DEFAULT_FORMAT_DATETIME )
+  {
+    return \DateTime::createFromFormat( $format, $dateStr )->format( 'U' ) ;
+  }
+
+  public static function deltaDatesInSecs( $dateStr1, $dateStr2, $format = self::DEFAULT_FORMAT_DATETIME )
+  {
+    return self::datetimeToSecs( $dateStr2, $format ) - self::datetimeToSecs( $dateStr1, $format ) ;
+  }
+  
+  public static function getRFC2822Timezone()
+  {
+    return explode( ' ', ( new \DateTime( 'NOW' ) )->format( \DateTime::RFC2822 ) )[5] ;
+  }
+
+  // mode in [ null|raw|timezoned ], where null => gmdate, raw => without timezone, timezoned => current timezone
+  public static function getRFC2822Now( $mode = null )
+  {
+    $res = gmdate( \DateTime::RFC2822 ) ;
+    switch( $mode )
+    {
+    case "raw" :
+      $res = implode( ' ', explode( ' ', $res, -1 ) ) ;
+      break ;
+    case "timezoned" :
+      $res  = implode( ' ', explode( ' ', $res, -1 ) ) ;
+      $ctz  = self::getRFC2822Timezone() ;
+      $res .= ' ' . $ctz ;
+      break ;
+    default :
+      break ;
+    }
+    return $res ;
   }
 }
 ?>

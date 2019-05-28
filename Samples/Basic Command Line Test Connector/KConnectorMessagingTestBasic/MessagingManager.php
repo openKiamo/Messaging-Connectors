@@ -6,11 +6,11 @@ namespace UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 
 
-use KiamoConnectorSampleTools\Datetimes ;
-use KiamoConnectorSampleTools\Logger    ;
-use KiamoConnectorSampleTools\Module    ;
-use KiamoConnectorSampleTools\Resources ;
-use KiamoConnectorSampleTools\Uuids     ;
+use KiamoConnectorSampleToolsBasic\Datetimes ;
+use KiamoConnectorSampleToolsBasic\Logger    ;
+use KiamoConnectorSampleToolsBasic\Module    ;
+use KiamoConnectorSampleToolsBasic\Resources ;
+use KiamoConnectorSampleToolsBasic\Uuids     ;
 
 
 class MessagingManager extends Module

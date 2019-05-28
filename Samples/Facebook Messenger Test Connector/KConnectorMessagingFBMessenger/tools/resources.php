@@ -1,11 +1,11 @@
 <?php
 
-namespace KiamoConnectorSampleToolsBasic ;
+namespace KiamoConnectorSampleToolsFB ;
 
 
 require_once( __DIR__ . DIRECTORY_SEPARATOR . 'files.php' ) ;
 
-use KiamoConnectorSampleToolsBasic\Files ;
+use KiamoConnectorSampleToolsFB\Files ;
 
 
 /***********************************************

@@ -5,8 +5,8 @@ namespace UserFiles\Messaging\Connector ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
-use KiamoConnectorSampleTools\Logger ;
-use KiamoConnectorSampleTools\Module ;
+use KiamoConnectorSampleToolsBasic\Logger ;
+use KiamoConnectorSampleToolsBasic\Module ;
 use UserFiles\Messaging\Connector\KConnectorMessagingTestBasic\MessagingManager ;
 
 use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
@@ -28,6 +28,8 @@ class KConnectorMessagingTestBasic extends    Module
                          self::RootPath . DIRECTORY_SEPARATOR . "logs", 
                          self::RootPath . DIRECTORY_SEPARATOR . "conf" ) ;
     $this->log( "------------------------------------------------------------------------------", Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Service : " . $this->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Version : " . $this->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
     $this->_parameters = $configuration ;
     $this->_msgManager = new MessagingManager( self::MessagingAddress ) ;
     $this->log( "INIT : OK", Logger::LOG_INFO, __METHOD__ ) ;
