@@ -24,34 +24,90 @@ class MessagingManager extends Module
     $this->log( "Service : " . $this->_parent->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
     $this->log( "Version : " . $this->_parent->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
     
-    $this->initResourceFile()  ;
+    $this->initRuntimeData()   ;
+    $this->initResourceFiles() ;
   }
 
+  public   function initRuntimeData()
+  {
+    $this->selfId                = $this->_parent->getConf( 'accessData.credentials.userId'             ) ;
+    $this->customersCacheEnabled = $this->_parent->getConf( 'runtime.resources.customers.cache.enabled' ) ;
+    $this->cursorsEnabled        = $this->_parent->getConf( 'runtime.resources.cursors.enabled'         ) ;
+    $this->customersEnabled      = $this->_parent->getConf( 'runtime.resources.customers.enabled'       ) ;
+    $this->conversationsEnabled  = $this->_parent->getConf( 'runtime.resources.conversations.enabled'   ) ;
+  }
 
-  // Create a messaging address if it does not already exists
-  public   function initResourceFile()
+  public   function initResourceFiles()
   {
     if( Resources::existsDefaultDataFile() ) return ;
-    $pattern = [
-      'mainData'       => [
-        'lastReadMessageId' => '',
-      ],
-      'outMessageIds'  => [],
-      'customers'      => [],
+
+    Resources::srm( 'cursors'       ) ;
+    Resources::srm( 'customers'     ) ;
+    Resources::srm( 'conversations' ) ;
+
+
+    // Main Data
+    // => self
+    // => last messages sent (ids)
+    // => (optional) customers data cache
+    $mainPattern = [
+      'outMessageIds' => [],
     ] ;
-    $selfUserId =  $this->_parent->getConf( 'accessData.credentials.userId' ) ;
-    if( !empty( $selfUserId ) )
+    // Optional (debug purpose) : Customers cache
+    // ==> map customerId <==> customerName for the cache duration (requests optimization)
+    if( $this->customersCacheEnabled )
     {
-      $this->getUserRecord( $pattern, $selfUserId ) ;
+      $mainPattern[ 'customersCache' ] = [
+        'nextCheckTs'                    => Datetimes::nowTs() + $this->_parent->getConf( 'runtime.resources.customers.cache.checkEveryInSecs' ),
+        'userRecords'                    => [],
+        'expirationMap'                  => [],
+      ] ;
     }
-    if( $this->_parent->getConf( 'runtime.dbFile.debugMode' ) )
+    if( !empty( $this->selfId ) )
     {
-      $pattern[ 'conversations' ] = [] ;
-      $pattern[ 'inMessageIds'  ] = [] ;
+      $selfUserRecord = $this->getUserRecord( $this->selfId ) ;
+      $mainPattern[ 'self' ] = $selfUserRecord ;
     }
-    Resources::writeDefaultDataFile( $pattern ) ;  // Init the data file if it does not already exists
+    Resources::writeDefaultDataFile( $mainPattern ) ;
+
+    // Optional (debug purpose) : Cursors
+    // ==> lastReadMessageId (message list optimization)
+    if( $this->cursorsEnabled )
+    {
+      $cursorsPattern = [
+        'cursors' => [
+          'lastReadMessageId' => '',
+        ],
+      ] ;
+      Resources::writeDataFile( 'cursors', $cursorsPattern ) ;
+    }
+
+    // Optional (debug purpose) : Customers
+    // ==> customers data (id, name, pageName, ...) for each received message
+    if( $this->customersEnabled )
+    {
+      $customersPattern = [
+        'customers' => [],
+      ] ;
+      Resources::writeDataFile( 'customers', $customersPattern ) ;
+    }
+
+    // Optional (debug purpose) : Conversations
+    // ==> conversation list
+    if( $this->conversationsEnabled )
+    {
+      $conversationsPattern = [
+        'conversations' => [],
+        'inMessageIds'  => [],
+      ] ;
+      Resources::writeDataFile( 'conversations', $conversationsPattern ) ;
+    }
   }
   
+
+  /* --------------------
+     Twitter call methods
+  */
 
   public   function _buildCallContext( $verb, $urlParams = null )
   {
@@ -218,8 +274,91 @@ class MessagingManager extends Module
   }
 
 
-  private  function getUserRecord( &$messagingData, $userId )
+  /* --------------------------
+     Customers cache management
+  */
+
+  private  function addUserToCache( $userRecord, &$messagingData = null )
   {
+    if( !$this->customersCacheEnabled ) return ;
+
+    $_messagingData = &$messagingData ;
+    if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
+
+    $userRecord[ 'expirationTs' ] = Datetimes::nowTs() + $this->_parent->getConf( 'runtime.resources.customers.cache.expirationInSecs' ) ;
+    $_messagingData[ 'customersCache' ][ 'userRecords' ][ $userRecord[ 'id' ] ] = $userRecord ;
+    $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $userRecord[ 'expirationTs' ] ] = $userRecord[ 'id' ] ;
+    $this->log( "==> record User " . $userRecord[ 'id' ] . " in the customers cache", Logger::LOG_DEBUG, __METHOD__ ) ;
+
+    if( empty( $messagingData ) ) Resources::writeDefaultDataFile( $_messagingData ) ;
+  }
+
+  private  function getUserFromCache( $userId, &$messagingData = null )
+  {
+    if( !$this->customersCacheEnabled || empty( $messagingData ) ) return null ;
+
+    if( array_key_exists( $userId, $messagingData[ 'customersCache' ][ 'userRecords' ] ) )
+    {
+      $userRecord = $messagingData[ 'customersCache' ][ 'userRecords' ][ $userId ] ;
+      unset( $userRecord[ 'expirationTs' ] ) ;
+      $this->log( "==> getting userRecord from cache : " . json_encode( $userRecord ), Logger::LOG_TRACE, __METHOD__ ) ;
+      return $userRecord ;
+    }
+    
+    return null ;
+  }
+
+  private  function cleanUserCache( &$messagingData = null )
+  {
+    if( !$this->customersCacheEnabled ) return ;
+
+    $_messagingData = &$messagingData ;
+    if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
+
+    $nowTs = Datetimes::nowTs() ;
+    if( $nowTs <= $_messagingData[ 'customersCache' ][ 'nextCheckTs' ] ) return ;
+    $_messagingData[ 'customersCache' ][ 'nextCheckTs' ] = $nowTs + $this->_parent->getConf( 'runtime.resources.customers.cache.checkEveryInSecs' ) ;
+
+    foreach( $_messagingData[ 'customersCache' ][ 'expirationMap' ] as $ts => $userId )
+    {
+      if( $nowTs > intval( $ts ) )
+      {
+        $this->log( "==> removing userId " . $userId . " from cache", Logger::LOG_TRACE, __METHOD__ ) ;
+        unset( $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $userId ] ) ;
+        unset( $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $ts     ] ) ;
+      }
+    }
+
+    if( empty( $messagingData ) ) Resources::writeDefaultDataFile( $_messagingData ) ;
+  }
+
+
+  /* -------------------
+     Entities management
+  */
+
+  private  function getUserRecord( $userId, &$messagingData = null, &$customersData = null )
+  {
+    // If messagingData and customersData are empty, we simply are in initialization phase, no customer is recorded yet
+
+    // First, check if the user is self
+    if(    !empty( $messagingData )
+        &&  $userId === $this->selfId )
+    {
+      return $messagingData[ 'self' ] ;
+    }
+
+    // Second, check if the user is already in the customers cache
+    $userRecord = $this->getUserFromCache( $userId, $messagingData ) ;
+    if( !empty( $userRecord ) ) return $userRecord ;
+
+    // Third, check if the user is already in the customer list
+    if(    !empty( $customersData )
+        &&  array_key_exists( $userId, $customersData[ 'customers' ] ) )
+    {
+      return $customersData[ 'customers' ][ $userId ] ;
+    }
+      
     $userData = $this->twitterRequest( 'userShow', [ 'user_id' => $userId ] ) ;
     // Create user record
     $userRecord = [
@@ -237,56 +376,46 @@ class MessagingManager extends Module
       $userRecord[ 'name'   ] = $userData[ 'name'        ] ;
       $userRecord[ 'screen' ] = $userData[ 'screen_name' ] ;
       $userRecord[ 'key'    ] = $userData[ 'name'        ] . '@' . $userData[ 'screen_name' ] ;
-      $messagingData[ 'customers' ][ $userRecord[ 'id' ] ] = $userRecord ;
+      
+      // Add the user record to the customers cache
+      if(    !empty( $messagingData )
+          &&  $this->customersCacheEnabled )
+      {
+        $this->addUserToCache( $userRecord, $messagingData ) ;
+      }
+
+      // Add the user record to the customer list
+      if( !empty( $customersData ) )
+      {
+        $customersData[ 'customers' ][ $userId ] = $userRecord ;
+        $this->log( "==> record User " . $userId . " in the customer list", Logger::LOG_DEBUG, __METHOD__ ) ;
+      }
     }
     $this->log( "==> User : " . json_encode( $userRecord ), Logger::LOG_INFO, __METHOD__ ) ;
     return $userRecord ;
   }
 
-  public   function sendMessage( $to, $message )
+
+  /* ----------------------
+     Connector entry points
+  */
+
+  public   function readMessages( $lastReadMessageId )
   {
-    $messagingData = Resources::readDefaultDataFile() ;
-    $_to = $to ;
-    if( array_key_exists( $to, $messagingData[ 'customers' ] ) && !empty( $messagingData[ 'customers' ][ $to ][ 'key' ] ) ) $_to = $messagingData[ 'customers' ][ $to ][ 'key' ] ;
-    $this->log( "Sending message to user '" . $_to . "', message='" . $message . "'...", Logger::LOG_INFO, __METHOD__ ) ;
-    $body = '{"event": {"type": "message_create", "message_create": {"target": {"recipient_id": "'
-                               . $to
-                               . '"}, "message_data": {"text": "' 
-                               . $message
-                               . '"}}}}' ;
-    $messageData = $this->twitterRequest( 'messageNew', null, $body ) ;
-    if( empty( $messageData ) )
-    {
-      $this->log( "! Twitter request issue while trying to send message to user id=" . $to, Logger::LOG_WARN, __METHOD__ ) ;
-      return false ;
-    }
-    
-    $messageRecord = [
-      'id'           => $messageData[ 'event' ][ 'id'                ],
-      'timestamp'    => $messageData[ 'event' ][ 'created_timestamp' ],
-      'from'         => $messageData[ 'event' ][ 'message_create'    ][ 'sender_id'    ],
-      'to'           => $messageData[ 'event' ][ 'message_create'    ][ 'target'       ][ 'recipient_id' ],
-      'message'      => $messageData[ 'event' ][ 'message_create'    ][ 'message_data' ][ 'text'         ],
+    $this->setActionId() ;
+    $res                   = [
+      'lastReadMessageId'    => $lastReadMessageId,
+      'newMessages'          => [],
     ] ;
-    $messagingData[ 'outMessageIds' ][] = $messageRecord[ 'id' ] ;
-    if( $this->_parent->getConf( 'runtime.dbFile.debugMode' ) )
-    {
-      $messagingData[ 'conversations' ][    $messageRecord[ 'to' ] ][ 'messages' ][ $messageRecord[ 'id' ] ] = $messageRecord ;
-    }
-    Resources::writeDefaultDataFile( $messagingData ) ;
-    $this->log( "==> message sent : " . json_encode( $messageRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;
+    $messagingData         = Resources::readDefaultDataFile() ;
+    $cursorsData           = $this->cursorsEnabled       ? Resources::readDataFile( 'cursors'       ) : null ;
+    $customersData         = $this->customersEnabled     ? Resources::readDataFile( 'customers'     ) : null ;
+    $conversationsData     = $this->conversationsEnabled ? Resources::readDataFile( 'conversations' ) : null ;
 
-    return true ;
-  }
-
-
-  public   function readMessages()
-  {
-    $res             = [] ;
-    $messagingData   = Resources::readDefaultDataFile() ;
-    $dbFileDebugMode = $this->_parent->getConf( 'runtime.dbFile.debugMode' ) ;
-
-    $this->log( "Fetching Twitter messages...", Logger::LOG_INFO, __METHOD__ ) ;
+    $slog = "Fetching Twitter messages" ;
+    if( !empty( $lastReadMessageId ) ) $slog .= ", lastReadMessageId=" . $lastReadMessageId ;
+    $slog .= "..." ;
+    $this->log( $slog, Logger::LOG_INFO, __METHOD__ ) ;
     
     $urlParams = [] ;
     $pageCount = $this->_parent->getConf( 'accessData.verbs.messageList.paginationCount' ) ;
@@ -299,7 +428,7 @@ class MessagingManager extends Module
       $urlParams[ 'count' ] = $pageCount ;
     }
 
-    $lastReadMessageId    = $messagingData[ 'mainData' ][ 'lastReadMessageId' ] ;
+    if( empty( $lastReadMessageId ) && $this->cursorsEnabled ) $lastReadMessageId = $cursorsData[ 'cursors' ][ 'lastReadMessageId' ] ;
     $newLastReadMessageId = $lastReadMessageId ;
     $foundLastReadMessage = false ;
     $newMsgNb             = 0 ;
@@ -316,12 +445,13 @@ class MessagingManager extends Module
       {
         if( $message[ 'id' ] === $lastReadMessageId )
         {
-          $this->log( "==> already read message, stopping reading here", Logger::LOG_DEBUG, __METHOD__ ) ;
+          $this->log( "==> already read message, stop reading here", Logger::LOG_DEBUG, __METHOD__ ) ;
           $foundLastReadMessage = true ;
           break ;
         }
         if( $message[ 'type' ] !== 'message_create' ) continue ;
-        // Message sent by support : consider it as already read
+
+        // Message sent by support user : consider it as already read
         if( !empty( $messagingData[ 'outMessageIds' ] ) && in_array( $message[ 'id' ], $messagingData[ 'outMessageIds' ] ) )
         {
           $messageRecord = [
@@ -333,11 +463,13 @@ class MessagingManager extends Module
           ] ;
           $this->log( "==> sent message : " . json_encode( $messageRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;
           if( $newLastReadMessageId === $lastReadMessageId ) $newLastReadMessageId = $message[ 'id' ] ;   // Pick the first one, because they are "Sorted in reverse-chronological order" (https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events)
-          if( $dbFileDebugMode ) $messagingData[ 'inMessageIds' ][] = $messageRecord[ 'id' ] ;
+          if( $this->conversationsEnabled ) $conversationsData[ 'inMessageIds' ][] = $messageRecord[ 'id' ] ;
           unset( $messagingData[ 'outMessageIds' ][ array_search( $messageRecord[ 'id' ], $messagingData[ 'outMessageIds' ] ) ] ) ;
           continue ;
         }
-        if( $dbFileDebugMode && in_array( $message[ 'id' ], $messagingData[ 'inMessageIds' ] ) ) continue ;
+
+        // Double check if already read
+        if( $this->conversationsEnabled && in_array( $message[ 'id' ], $conversationsData[ 'inMessageIds' ] ) ) continue ;
       
         // Create message record
         $pageMsgNb++ ;
@@ -352,9 +484,8 @@ class MessagingManager extends Module
         if( $newLastReadMessageId === $lastReadMessageId ) $newLastReadMessageId = $messageRecord[ 'id' ] ;   // Pick the first one, because they are "Sorted in reverse-chronological order" (https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events)
       
         // Insert message record in messages database
-        $selfId = $this->_parent->getConf( 'accessData.credentials.userId' ) ;
         $conversationId = null ;
-        if( $messageRecord[ 'from' ] === $selfId )
+        if( $messageRecord[ 'from' ] === $this->selfId )
         {
           $conversationId = $messageRecord[ 'to'   ] ;
         }
@@ -362,35 +493,35 @@ class MessagingManager extends Module
         {
           $conversationId = $messageRecord[ 'from' ] ;
         }
-      
+
+        // Get from and to user records
+        $userFrom = $this->getUserRecord( $conversationId       , $messagingData, $customersData ) ;
+        $userTo   = $this->getUserRecord( $messageRecord[ 'to' ], $messagingData, $customersData ) ;
+        $this->log( "==> new  message from '" . $userFrom[ 'key' ] . "' to '" . $userTo[ 'key' ] . "'", Logger::LOG_DEBUG, __METHOD__ ) ;
+
         // If it's a new conversation, get the user data and insert the conversation in the database
-        if( !array_key_exists( $conversationId, $messagingData[ 'customers' ] ) )
+        if( $this->conversationsEnabled && !array_key_exists( $conversationId, $conversationsData[ 'conversations' ] ) )
         {
           $this->log( "==> new conversation from user id=" . $conversationId, Logger::LOG_INFO, __METHOD__ ) ;
           $newConvNb++ ;
-          if( $dbFileDebugMode ) $messagingData[ 'conversations' ][ $conversationId ] = [] ;
-
-          $userRecord = $this->getUserRecord( $messagingData, $conversationId ) ;
-          if( $dbFileDebugMode )
-          {
-            $messagingData[ 'conversations' ][ $conversationId ][ 'user'     ] = $userRecord ;
-            $messagingData[ 'conversations' ][ $conversationId ][ 'messages' ] = [] ;
-          }
+          $conversationsData[ 'conversations' ][ $conversationId ] = [] ;
+          $conversationsData[ 'conversations' ][ $conversationId ][ 'user'     ] = $userFrom ;
+          $conversationsData[ 'conversations' ][ $conversationId ][ 'messages' ] = [] ;
         }
         
         // Complete the message record
         $messageRecord[ 'date'      ] = Datetimes::getRFC2822FromTimestamp( $messageRecord[ 'timestamp' ] ) ;
         $messageRecord[ 'sender'    ] = $messageRecord[ 'from' ] ;
         $messageRecord[ 'recipient' ] = $messageRecord[ 'to'   ] ;
-        if( array_key_exists( $messageRecord[ 'from' ], $messagingData[ 'customers' ] ) && !empty( $messagingData[ 'customers' ][ $messageRecord [ 'from' ] ][ 'key' ] ) ) $messageRecord[ 'sender'    ] = $messagingData[ 'customers' ][ $messageRecord [ 'from' ] ][ 'key' ] ;
-        if( array_key_exists( $messageRecord[ 'to'   ], $messagingData[ 'customers' ] ) && !empty( $messagingData[ 'customers' ][ $messageRecord [ 'to'   ] ][ 'key' ] ) ) $messageRecord[ 'recipient' ] = $messagingData[ 'customers' ][ $messageRecord [ 'to'   ] ][ 'key' ] ;
+        $messageRecord[ 'sender'    ] = $userFrom[      'key'  ] ;
+        $messageRecord[ 'recipient' ] = $userTo[        'key'  ] ;
         $this->log( "==> new  message : " . json_encode( $messageRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;
 
-        array_push( $res, $messageRecord ) ;
-        if( $dbFileDebugMode )
+        array_push( $res[ 'newMessages' ], $messageRecord ) ;
+        if( $this->conversationsEnabled )
         {
-          $messagingData[ 'conversations' ][ $conversationId ][ "messages" ][ $messageRecord[ 'id' ] ] = $messageRecord ;
-          $messagingData[ 'inMessageIds'  ][] = $messageRecord[ 'id' ] ;
+          $conversationsData[ 'conversations' ][ $conversationId ][ "messages" ][ $messageRecord[ 'id' ] ] = $messageRecord ;
+          $conversationsData[ 'inMessageIds'  ][] = $messageRecord[ 'id' ] ;
         }
       }
       
@@ -406,15 +537,91 @@ class MessagingManager extends Module
       $this->log( "==> Next page cursor : '" . $urlParams[ 'cursor' ] . "'", Logger::LOG_DEBUG, __METHOD__ ) ;
     }
 
+    // If new messages occured, save data files
     if( $newLastReadMessageId !== $lastReadMessageId )
     {
-      $messagingData[ 'mainData' ][ 'lastReadMessageId' ] = $newLastReadMessageId ;
+      // Clean cache before saving the main data file
+      $this->cleanUserCache( $messagingData ) ;
+
+      // Save main data file
       Resources::writeDefaultDataFile( $messagingData ) ;
+
+      // Save cursors       file
+      if( $this->cursorsEnabled       )
+      {
+        $cursorsData[ 'cursors' ][ 'lastReadMessageId' ] = $newLastReadMessageId ;
+        Resources::writeDataFile( 'cursors'      , $cursorsData       ) ;
+      }
+
+      // Save customers     file
+      if( $this->customersEnabled     )
+      {
+        Resources::writeDataFile( 'customers'    , $customersData     ) ;
+      }
+
+      // Save conversations file
+      if( $this->conversationsEnabled )
+      {
+        Resources::writeDataFile( 'conversations', $conversationsData ) ;
+        $this->log( "==> new conversations : " .  $newConvNb . ", new messages : " . $newMsgNb, Logger::LOG_INFO, __METHOD__ ) ;
+      }
     }
-    if( $dbFileDebugMode ) $this->log( "==> new conversations : " .  $newConvNb . ", new messages : " . $newMsgNb, Logger::LOG_INFO, __METHOD__ ) ;
-    $this->log( "Read message(s) : " . count( $res ) . " results", Logger::LOG_INFO, __METHOD__ ) ;
-    
+
+    $res[ 'lastReadMessageId' ] = $newLastReadMessageId ;
+    $this->log( "Read message(s) : " . count( $res[ 'newMessages' ] ) . " results", Logger::LOG_INFO, __METHOD__ ) ;
+
+    $this->clearActionId() ;
     return $res ;
+  }
+  
+  public   function sendMessage( $to, $message )
+  {
+    $this->setActionId() ;
+    $messagingData = Resources::readDefaultDataFile() ;
+
+    $_to = $to ;
+    // Only for debug log
+    if( $this->customersCacheEnabled || $this->customersEnabled )
+    {
+      $customersData = null ;
+      if( $this->customersEnabled ) $customersData = Resources::readDataFile( 'customers' ) ;
+      $userRecord = $this->getUserRecord( $to, $messagingData, $customersData ) ;
+      $_to = $userRecord[ 'key' ] ;
+    }
+    $this->log( "Sending message to user '" . $_to . "', message='" . $message . "'...", Logger::LOG_INFO, __METHOD__ ) ;
+    $body =   '{"event": {"type": "message_create", "message_create": {"target": {"recipient_id": "'
+            . $to
+            . '"}, "message_data": {"text": "' 
+            . $message
+            . '"}}}}' ;
+    $messageData = $this->twitterRequest( 'messageNew', null, $body ) ;
+    if( empty( $messageData ) )
+    {
+      $this->log( "! Twitter request issue while trying to send message to user id=" . $to, Logger::LOG_WARN, __METHOD__ ) ;
+      $this->clearActionId() ;
+      return false ;
+    }
+    
+    $messageRecord = [
+      'id'           => $messageData[ 'event' ][ 'id'                ],
+      'timestamp'    => $messageData[ 'event' ][ 'created_timestamp' ],
+      'from'         => $messageData[ 'event' ][ 'message_create'    ][ 'sender_id'    ],
+      'to'           => $messageData[ 'event' ][ 'message_create'    ][ 'target'       ][ 'recipient_id' ],
+      'message'      => $messageData[ 'event' ][ 'message_create'    ][ 'message_data' ][ 'text'         ],
+    ] ;
+    $messagingData[ 'outMessageIds' ][] = $messageRecord[ 'id' ] ;
+    if( $this->conversationsEnabled )
+    {
+      $conversationsData = Resources::readDataFile( 'conversations' ) ;
+      $conversationsData[ 'conversations' ][ $messageRecord[ 'to' ] ][ 'messages' ][ $messageRecord[ 'id' ] ] = $messageRecord ;
+    }
+    Resources::writeDefaultDataFile( $messagingData ) ;
+    if( $this->customersEnabled     ) Resources::writeDataFile( 'customers'    , $customersData     ) ;
+    if( $this->conversationsEnabled ) Resources::writeDataFile( 'conversations', $conversationsData ) ;
+    $this->log( "==> message sent : " . json_encode( $messageRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;
+
+    $this->clearActionId() ;
+    return true ;
   }
 }
 ?>

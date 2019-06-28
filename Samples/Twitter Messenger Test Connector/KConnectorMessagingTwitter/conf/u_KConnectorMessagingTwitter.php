@@ -5,8 +5,21 @@ return [
     'version'                     => 'sample',
   ],
   'runtime'                    => [
-    'dbFile'                      => [
-      'debugMode'                    => false,
+    'resources'                   => [
+      'cursors'                      => [
+        'enabled'                       => false,
+      ],
+      'customers'                    => [
+        'enabled'                       => false,
+        'cache'                         => [
+          'enabled'                        => true,
+          'checkEveryInSecs'               => 180,
+          'expirationInSecs'               => 300,
+        ],
+      ],
+      'conversations'                => [
+        'enabled'                       => false,
+      ],
     ],
   ],
   'accessData'                 => [
@@ -18,7 +31,7 @@ return [
         'route'                        => 'direct_messages/events',
         'verb'                         => 'list.json',
         'type'                         => 'application/x-www-form-urlencoded',
-        'paginationCount'              => '20',  // default = 20, max = 50 : https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events
+        'paginationCount'              => '50',  // default = 20, max = 50 : https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events
       ],
       'messageShow'                  => [  // Get uniq message
         'method'                       => 'GET',
@@ -43,7 +56,7 @@ return [
       'userId'                       => 'xxxxxxxxxxxxxxxxxx',                                   // selfId : get it by sending a direct message to yourself and call $this->connector->_msgManager->twitterRequest( 'messageList' ) in the CommandLineTester
       'consumerKey'                  => 'xxxxxxxxxxxxxxxxxxxxxxxxx',                            // apiKey
       'consumerSecret'               => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',   // apiSecretKey
-      'oauthToken'                   => 'yyyyyyyyyyyyyyyyyy-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',   // accessToken
+      'oauthToken'                   => 'xxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',   // accessToken
       'oauthTokenSecret'             => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',        // accessSecretToken
     ],
     'oauthData'                   => [

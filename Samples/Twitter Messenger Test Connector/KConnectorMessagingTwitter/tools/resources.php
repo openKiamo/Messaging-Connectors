@@ -19,74 +19,82 @@ class Resources
 {
   const DATA_PATH = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR ;
 
-  public static function existsFile( $filename )
+  public static function existsFile( $name )
   {
-    return Files::existsFile( Resources::_getDataFolderPath() . $filename ) ;
+    return Files::existsFile( Resources::getDataFolderPath( 1 ) . Resources::_getFileName( $name ) ) ;
   }
 
-  public static function srm( $filename )
+  public static function srm( $name )
   {
-    Files::srm( Resources::_getDataFolderPath() . $filename ) ;
+    Files::srm( Resources::getDataFolderPath( 1 ) . Resources::_getFileName( $name ) ) ;
   }
 
-  public static function fileInfos( $filename, $path = true, $data = false )
+  public static function fileInfos( $name, $path = true, $data = false )
   {
-    return Files::fileInfos( Resources::_getDataFolderPath() . $filename, $path, $data ) ;
+    return Files::fileInfos( Resources::getDataFolderPath( 1 ) . Resources::_getFileName( $name ), $path, $data ) ;
   }
 
-  public static function zipFile( $filename, $deleteSource = true )
+  public static function zipFile( $name, $deleteSource = true )
   {
-    return Files::zipFile( Resources::_getDataFolderPath() . $filename, $deleteSource ) ;
+    return Files::zipFile( Resources::getDataFolderPath( 1 ) . Resources::_getFileName( $name ), $deleteSource ) ;
   }
 
-  public static function getDataFolderPath()
+  public static function getDataFolderPath( $shift = 0 )
   {
-    return Resources::_getDataFolderPath() ;
+    return Resources::_getDataFolderPath( Resources::_getModuleName( $shift ) ) ;
   }
-  public static function _getDataFolderPath()
+  public static function _getDataFolderPath( $moduleName )
   {
-    return Resources::DATA_PATH . Resources::_getModuleName() . DIRECTORY_SEPARATOR ;
-  }
-
-  public static function getDefaultFilePath()
-  {
-    return Resources::_getDataFolderPath() . Resources::_getDefaultFileName() ;
-  }
-  private static function _getDefaultFileName()
-  {
-    return Resources::_getModuleName() . '.json' ;
+    return Resources::DATA_PATH . $moduleName . DIRECTORY_SEPARATOR ;
   }
 
+  private static function _getFileName( $name )
+  {
+    return $name . '.json' ;
+  }
+
+  public  static function  getModuleName()
+  {
+    return Resources::_getModuleName() ;
+  }
   private static function _getModuleName( $shift = 0 )
   {
     $modName = '' ;
-    try { $modName = debug_backtrace( DEBUG_BACKTRACE_PROVIDE_OBJECT, 4 - $shift )[ 3 - $shift ][ 'object' ]->getName() ; } catch( \Exception $e ) {}
+    try { $modName = debug_backtrace( DEBUG_BACKTRACE_PROVIDE_OBJECT, 3 + $shift )[ 2 + $shift ][ 'object' ]->getName() ; } catch( \Exception $e ) {}
     return $modName ;
   }
 
   public static function createDataFolderPath( $pFolderPath = null )
   {
     $folderPath = $pFolderPath ;
-    if( $folderPath === null ) $folderPath = Resources::_getDataFolderPath() ;
+    if( $folderPath === null ) $folderPath = Resources::getDataFolderPath( 1 ) ;
     if( is_dir( $folderPath ) ) return ;
     mkdir( $folderPath ) ;
   }
 
-  public static function existsDefaultDataFile()
+  public static function existsDataFile( $name, $_moduleName = null )
   {
-    $folderPath = Resources::_getDataFolderPath()  ;
+    $moduleName = empty( $_moduleName ) ? Resources::_getModuleName() : $_moduleName ;
+    $folderPath = Resources::_getDataFolderPath( $moduleName )  ;
     if( !is_dir( $folderPath    ) ) return false ;
-    $filename   = Resources::_getDefaultFileName() ;
+    $filename   = Resources::_getFileName( $name ) ;
     $filepath   = $folderPath . $filename ;
     if( !file_exists( $filepath ) ) return false ;
     return true ;
   }
-  public static function readDefaultDataFile()
+  public static function existsDefaultDataFile()
   {
+    $moduleName = Resources::_getModuleName() ;
+    return Resources::existsDataFile( $moduleName, $moduleName ) ;
+  }
+
+  public static function readDataFile( $name, $_moduleName = null )
+  {
+    $moduleName = empty( $_moduleName ) ? Resources::_getModuleName() : $_moduleName ;
     $res = null ;
-    $folderPath = Resources::_getDataFolderPath()  ;
+    $folderPath = Resources::_getDataFolderPath( $moduleName )  ;
     if( !is_dir( $folderPath    ) ) return $res ;
-    $filename   = Resources::_getDefaultFileName() ;
+    $filename   = Resources::_getFileName( $name ) ;
     $filepath   = $folderPath . $filename ;
     if( !file_exists( $filepath ) ) return $res ;
     $fileContent = file_get_contents( $filepath ) ;
@@ -94,24 +102,43 @@ class Resources
     if( $res === null ) $res = $fileContent ;
     return $res ;
   }
-  public static function writeDefaultDataFile( $content )
+  public static function readDefaultDataFile()
   {
-    $folderPath = Resources::_getDataFolderPath()  ;
+    $moduleName = Resources::_getModuleName() ;
+    return Resources::readDataFile( $moduleName, $moduleName ) ;
+  }
+
+  public static function writeDataFile( $name, $content, $_moduleName = null )
+  {
+    $moduleName = empty( $_moduleName ) ? Resources::_getModuleName() : $_moduleName ;
+    $folderPath = Resources::_getDataFolderPath( $moduleName )  ;
     Resources::createDataFolderPath( $folderPath ) ;
-    $filename   = Resources::_getDefaultFileName() ;
+    $filename   = Resources::_getFileName( $name ) ;
     $filepath   = $folderPath . $filename ;
     $_content   = json_encode( $content, JSON_PRETTY_PRINT ) ;
     $res = file_put_contents( $filepath, $_content ) ;
     return $res ;
   }
-  public static function deleteDefaultDataFile()
+  public static function writeDefaultDataFile( $content )
   {
-    $folderPath = Resources::_getDataFolderPath()  ;
+    $moduleName = Resources::_getModuleName() ;
+    return Resources::writeDataFile( $moduleName, $content, $moduleName ) ;
+  }
+  
+  public static function deleteDataFile( $name, $_moduleName = null )
+  {
+    $moduleName = empty( $_moduleName ) ? Resources::_getModuleName() : $_moduleName ;
+    $folderPath = Resources::_getDataFolderPath( $moduleName )  ;
     if( !is_dir( $folderPath    ) ) return ;
-    $filename   = Resources::_getDefaultFileName() ;
+    $filename   = Resources::_getFileName( $name ) ;
     $filepath   = $folderPath . $filename ;
     if( !file_exists( $filepath ) ) return ;
     return Files::srm( $filepath ) ;
+  }
+  public static function deleteDefaultDataFile()
+  {
+    $moduleName = Resources::_getModuleName() ;
+    return Resources::deleteDataFile( $moduleName, $moduleName ) ;
   }
 }
 ?>

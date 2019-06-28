@@ -18,6 +18,15 @@ use KiamoConnectorSampleToolsTwitter\Webs      ;
 use UserFiles\Messaging\Connector\KConnectorMessagingTwitter ;
 
 
+class ConnectorStub extends Module
+{
+  public    function __construct( $name )
+  {
+    parent::__construct( null, null, null, $name ) ;
+    $this->_msgManager = new MessagingManager( $this ) ;
+  }
+}
+
 class CommandLineTester extends Module
 {
   const VerbTest = 'test' ;
@@ -32,7 +41,7 @@ class CommandLineTester extends Module
   {
     parent::__construct() ;
 
-    $this->connector = new KConnectorMessagingTwitter( null ) ;
+    $this->connector = new ConnectorStub( "KConnectorMessagingTwitter" ) ;
     $this->defineTestFunctions() ;
     if( $this->setTestId( $strictMode ) ) $this->run() ;
   }
@@ -61,6 +70,18 @@ class CommandLineTester extends Module
       'purpose'  => 'Authent curl',
       'function' => function()
       {
+        /*
+        POST /oauth2/token HTTP/1.1
+        Host: api.twitter.com
+        User-Agent: My Twitter App v1.0.23
+        Authorization: Basic eHZ6MWV2RlM0d0VFUFRHRUZQSEJvZzpMOHFxOVBaeVJn
+                             NmllS0dFS2hab2xHQzB2SldMdzhpRUo4OERSZHlPZw==
+        Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+        Content-Length: 29
+        Accept-Encoding: gzip
+
+        grant_type=client_credentials
+        */
         $url  = 'https://api.twitter.com/oauth2/token' ;
         $data = [ 'grant_type' => 'client_credentials' ] ;
         $head = [ 'Content-Type: application/x-www-form-urlencoded;charset=UTF-8' ] ;
@@ -77,62 +98,25 @@ class CommandLineTester extends Module
 
 
     $this->testFunctions[ 'test02' ] = [
-      'purpose'  => 'build request context',
-      'function' => function()
-      {
-        $verb = 'messageList' ;
-        $params = [
-          'messageList'  => [
-            //'url'           => null,
-            'url'          => [
-              'cursor'        => 'MTEzOTE5NDgyNTY5MjExMDg1Mg',
-            ],
-            'body'          => null,
-          ],
-          'messageShow' => [
-            'url'          => [
-              'id'         => '1138084226111197192',
-            ],
-            'body'         => null,
-          ],
-          'messageNew'   => [
-            'url'           => null,
-            'body'          =>   '{"event": {"type": "message_create", "message_create": {"target": {"recipient_id": "'
-                               . 'xxxxxxxxxxxxxxxxxx'
-                               . '"}, "message_data": {"text": "' 
-                               . 'Hello SIn 21 !'
-                               . '"}}}}',
-          ],
-          'userShow' => [
-            'url'          => [
-              //'user_id'       => '844229943160725504',
-              'user_id'       => 'xxxxxxxxxxxxxxxxxx',
-            ],
-            'body'         => null,
-          ],
-        ] ;
-        $callRes = $this->connector->_msgManager->twitterRequest( $verb, $params[ $verb ][ 'url' ], $params[ $verb ][ 'body' ] ) ;
-        echo "CallRes = " . json_encode( $callRes, JSON_PRETTY_PRINT ) . "\n" ; ;
-      }
-    ] ;
-
-
-    $this->testFunctions[ 'test03' ] = [
       'purpose'  => 'Test sendMessage',
       'function' => function()
       {
         $to  = 'xxxxxxxxxxxxxxxxxx' ;
-        $msg = 'Hello world !' ;
+        $msg = 'Hello World !' ;
         $this->connector->_msgManager->sendMessage( $to, $msg ) ;
       }
     ] ;
 
 
-    $this->testFunctions[ 'test04' ] = [
+    $this->testFunctions[ 'test03' ] = [
       'purpose'  => 'Test readMessages',
       'function' => function()
       {
-        $this->connector->_msgManager->readMessages() ;
+        $lastReadMessageId = null ;
+        //$lastReadMessageId = "1143179204227469317" ;
+        $res = $this->connector->_msgManager->readMessages( $lastReadMessageId ) ;
+        echo "==> Nb new messages   = " . count( $res[ 'newMessages'       ] ) . "\n" ;
+        echo "==> lastReadMessageId = " .        $res[ 'lastReadMessageId' ]   . "\n" ;
       }
     ] ;
 
@@ -186,7 +170,7 @@ class CommandLineTester extends Module
 
   private  function run()
   {
-    echo 'Test #' . $this->testId . " : '" . $this->testFunctions[ $this->testFunctionName ][ 'purpose' ] . "'\n---\n" ;
+    echo "\nTest #" . $this->testId . " : '" . $this->testFunctions[ $this->testFunctionName ][ 'purpose' ] . "'\n---\n" ;
 
     call_user_func( $this->testFunctions[ $this->testFunctionName ][ 'function' ] ) ;
   }
