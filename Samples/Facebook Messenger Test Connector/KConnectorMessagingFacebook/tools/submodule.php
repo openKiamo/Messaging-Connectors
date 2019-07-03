@@ -1,15 +1,15 @@
 <?php 
 
-namespace KiamoConnectorSampleToolsFB ;
+namespace KiamoConnectorSampleToolsFacebook ;
 
 
 require_once( __DIR__ . DIRECTORY_SEPARATOR . 'dict.php'        ) ;
 require_once( __DIR__ . DIRECTORY_SEPARATOR . 'confManager.php' ) ;
 require_once( __DIR__ . DIRECTORY_SEPARATOR . 'logger.php'      ) ;
 
-use KiamoConnectorSampleToolsFB\Dict        ;
-use KiamoConnectorSampleToolsFB\ConfManager ;
-use KiamoConnectorSampleToolsFB\Logger      ;
+use KiamoConnectorSampleToolsFacebook\Dict        ;
+use KiamoConnectorSampleToolsFacebook\ConfManager ;
+use KiamoConnectorSampleToolsFacebook\Logger      ;
 
 
 /**

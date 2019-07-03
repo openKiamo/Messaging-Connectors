@@ -1,6 +1,6 @@
 <?php
 
-namespace KiamoConnectorSampleToolsFB ;
+namespace KiamoConnectorSampleToolsFacebook ;
 
 
 use \DateTime, \DateTimeZone ;
@@ -12,13 +12,15 @@ use \DateTime, \DateTimeZone ;
 class Datetimes
 {
   // Consts
-  const DEFAULT_TIMEZONE        =        'Europe/Paris' ;
-  const DEFAULT_FORMAT_DATE     =                 'Ymd' ;
-  const DEFAULT_FORMAT_DATETIME =             'Ymd_His' ;
+  const DEFAULT_TIMEZONE           =        'Europe/Paris' ;
+  const DEFAULT_FORMAT_DATE        =                 'Ymd' ;
+  const DEFAULT_FORMAT_DATETIME    =             'Ymd_His' ;
+  
+  const DEFAULT_RFC2822_DATEFORMAT = 'Y-m-d\TH:i:s\+0000' ;
 
-  const MN_IN_SECS              =                    60 ;
-  const HH_IN_SECS              = self::MN_IN_SECS * 60 ;
-  const DD_IN_SECS              = self::HH_IN_SECS * 24 ;
+  const MN_IN_SECS                 =                    60 ;
+  const HH_IN_SECS                 = self::MN_IN_SECS * 60 ;
+  const DD_IN_SECS                 = self::HH_IN_SECS * 24 ;
   
 
   // Current timestamp
@@ -28,7 +30,7 @@ class Datetimes
   }
   public static function nowMs()
   {
-    return microtime() ;
+    return round( microtime( true ) * 1000 ) ;
   }
 
   // Now datetime, returned as a string of given format
@@ -71,6 +73,13 @@ class Datetimes
     return DateTime::createFromFormat( $format, $date    , new DateTimeZone( $timezone ) )-> getTimestamp() ;
   }
 
+  // Millis to date as string
+  public static function msToDate( $ms, $format = self::DEFAULT_FORMAT_DATETIME, $timezone = self::DEFAULT_TIMEZONE )
+  {
+    return self::tsToDate( self::msToTs( $ms ), $format, $timezone ) ;
+  }
+
+
   // <  0 : $date1 >  $date2
   // == 0 : $date1 == $date2
   // >  0 : $date1 <  $date2
@@ -107,6 +116,20 @@ class Datetimes
     return self::datetimeToSecs( $dateStr2, $format ) - self::datetimeToSecs( $dateStr1, $format ) ;
   }
   
+  public static function getRFC2822FromTimestamp( $ts )
+  {
+    $_ts = $ts ;
+    if( is_string( $ts ) && strlen( $ts ) > 10 ) $_ts = substr( $ts, 0, 10 ) ;
+    $sdate = new \DateTime() ;
+    $sdate->setTimestamp( $_ts ) ;
+    return $sdate->format( \DateTime::RFC2822 ) ;
+  }
+
+  public static function getRFC2822Date( $dateStr, $dateFormat = Datetimes::DEFAULT_RFC2822_DATEFORMAT )
+  {
+    return \DateTime::createFromFormat( $dateFormat, $dateStr )->format( \DateTime::RFC2822 ) ;
+  }
+
   public static function getRFC2822Timezone()
   {
     return explode( ' ', ( new \DateTime( 'NOW' ) )->format( \DateTime::RFC2822 ) )[5] ;

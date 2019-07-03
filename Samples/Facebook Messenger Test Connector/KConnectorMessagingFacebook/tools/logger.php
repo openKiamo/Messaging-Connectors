@@ -1,6 +1,6 @@
 <?php
 
-namespace KiamoConnectorSampleToolsFB ;
+namespace KiamoConnectorSampleToolsFacebook ;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . "datetimes.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR .     "files.php" ;
@@ -9,10 +9,10 @@ require_once __DIR__ . DIRECTORY_SEPARATOR .     "uuids.php" ;
 
 use \DateTime, \DateTimeZone ;
 
-use KiamoConnectorSampleToolsFB\Datetimes ;
-use KiamoConnectorSampleToolsFB\Files     ;
-use KiamoConnectorSampleToolsFB\Strings   ;
-use KiamoConnectorSampleToolsFB\Uuids     ;
+use KiamoConnectorSampleToolsFacebook\Datetimes ;
+use KiamoConnectorSampleToolsFacebook\Files     ;
+use KiamoConnectorSampleToolsFacebook\Strings   ;
+use KiamoConnectorSampleToolsFacebook\Uuids     ;
 
 
 /***********************************************

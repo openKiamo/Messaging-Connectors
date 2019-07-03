@@ -16,7 +16,7 @@ return [
   'user'  => [
     'key'   => 'u',
     'items' => [
-      'KConnectorMessagingFBMessenger',
+      'KConnectorMessagingFacebook',
     ],
   ],
 ] ;
