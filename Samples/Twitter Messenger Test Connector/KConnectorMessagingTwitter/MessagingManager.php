@@ -511,8 +511,6 @@ class MessagingManager extends Module
         
         // Complete the message record
         $messageRecord[ 'date'      ] = Datetimes::getRFC2822FromTimestamp( $messageRecord[ 'timestamp' ] ) ;
-        $messageRecord[ 'sender'    ] = $messageRecord[ 'from' ] ;
-        $messageRecord[ 'recipient' ] = $messageRecord[ 'to'   ] ;
         $messageRecord[ 'sender'    ] = $userFrom[      'key'  ] ;
         $messageRecord[ 'recipient' ] = $userTo[        'key'  ] ;
         $this->log( "==> new  message : " . json_encode( $messageRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;

@@ -1,9 +1,8 @@
 <?php
 namespace UserFiles\Messaging\Connector ;
 
-
-require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTwitter" . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
-require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTwitter" . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'KConnectorMessagingTwitter' . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'KConnectorMessagingTwitter' . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
 use KiamoConnectorSampleToolsTwitter\Logger ;
 use KiamoConnectorSampleToolsTwitter\Module ;
@@ -16,8 +15,7 @@ use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
 class KConnectorMessagingTwitter extends    Module
                                  implements GenericConnectorInterface
 {
-  const Name     = "KConnectorMessagingTwitter" ;
-  const RootPath = __DIR__ . DIRECTORY_SEPARATOR . self::Name ;
+  const RootPath = __DIR__ . DIRECTORY_SEPARATOR . 'KConnectorMessagingTwitter' ;
 
 
   public function __construct( ConnectorConfiguration $configuration )
@@ -42,19 +40,18 @@ class KConnectorMessagingTwitter extends    Module
     $this->log( "Fetching message(s)", Logger::LOG_INFO, __METHOD__ ) ;
 
     $params             = $parameterBag->getParameters() ;
-    $lastReadMessageKey = self::Name . '.lastReadMessageId' ;
+    $lastReadMessageKey = 'KConnectorMessagingTwitter' . '.lastReadMessageId' ;
     $lastReadMessageId  = '' ;
     if( array_key_exists( $lastReadMessageKey, $params ) ) $lastReadMessageId = $params[ $lastReadMessageKey ] ;
     if( !empty( $lastReadMessageId ) ) $this->log( "==> lastMessageId=" . $lastReadMessageId, Logger::LOG_DEBUG, __METHOD__ ) ;
 
     $msgRes             = $this->_msgManager->readMessages( $lastReadMessageId ) ;  // read all unread user messages from the messaging address
-    $lastReadMessageId  = $msgRes[ 'lastReadMessageId' ] ;
     $msgArr             = $msgRes[ 'newMessages'       ] ;
     $this->log( "Fetched " . count( $msgArr ) . " message(s)", Logger::LOG_INFO, __METHOD__ ) ;
-    if( !empty( $lastReadMessageId ) )
+    if( $lastReadMessageId !== $msgRes[ 'lastReadMessageId' ] )
     {
-      $this->log( "==> lastMessageId=" . $lastReadMessageId, Logger::LOG_DEBUG, __METHOD__ ) ;
-      $parameterBag->setParameter( $lastReadMessageKey, $lastReadMessageId ) ;
+      $this->log( "==> new lastMessageId=" . $msgRes[ 'lastReadMessageId' ], Logger::LOG_DEBUG, __METHOD__ ) ;
+      $parameterBag->setParameter( $lastReadMessageKey, $msgRes[ 'lastReadMessageId' ] ) ;
     }
 
     foreach( $msgArr as $msg )

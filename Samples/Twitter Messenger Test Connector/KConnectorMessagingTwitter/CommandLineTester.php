@@ -2,8 +2,6 @@
 
 namespace UserFiles\Messaging\Connector\KConnectorMessagingTwitter ;
 
-
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "KConnectorMessagingTwitter.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 
@@ -14,8 +12,6 @@ use KiamoConnectorSampleToolsTwitter\Module    ;
 use KiamoConnectorSampleToolsTwitter\Resources ;
 use KiamoConnectorSampleToolsTwitter\Uuids     ;
 use KiamoConnectorSampleToolsTwitter\Webs      ;
-
-use UserFiles\Messaging\Connector\KConnectorMessagingTwitter ;
 
 
 class ConnectorStub extends Module
