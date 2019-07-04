@@ -120,7 +120,26 @@ class Webs
     // Header
     if( !empty( $header ) )
     {
-      curl_setopt( $ch, CURLOPT_HTTPHEADER  , $header ) ;
+      $_header = [] ;
+      if( is_string( $header ) )
+      {
+        $_header[] = $header ;
+      }
+      else  // It's an array
+      {
+        foreach( $header as $k => $v )
+        {
+          if( is_int( $k ) )
+          {
+            $_header[] = $v ;
+          }
+          else  // It's a string
+          {
+            $_header[] = $k . ': ' . $v ;
+          }
+        }
+      }
+      curl_setopt( $ch, CURLOPT_HTTPHEADER  , $_header ) ;
     }
 
     // Authent Data
