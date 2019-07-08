@@ -9,13 +9,13 @@ return [
       'cursors'                      => [
         'enabled'                       => false,
       ],
+      'customerCache'                => [
+        'enabled'                       => true,  // Should be let enabled for the most recent conversations, in order to avoid useless Twitter API requests
+        'checkEveryInSecs'              => 180,
+        'expirationInSecs'              => 300,
+      ],
       'customers'                    => [
         'enabled'                       => false,
-        'cache'                         => [
-          'enabled'                        => true,
-          'checkEveryInSecs'               => 180,
-          'expirationInSecs'               => 300,
-        ],
       ],
       'conversations'                => [
         'enabled'                       => false,

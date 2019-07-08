@@ -39,11 +39,12 @@ class MessagingManager extends Module
 
     $this->dateFormat               = $this->_parent->getConf( "runtime.datetimes.dateFormat"                       ) ;
 
+    $this->customerCacheEnabled     = $this->_parent->getConf( 'runtime.resources.customerCache.enabled'            ) ;
+    $this->customerCacheCheck       = $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs'   ) ;
+    $this->customerCacheExpiration  = $this->_parent->getConf( 'runtime.resources.customerCache.expirationInSecs'   ) ;
+
     $this->cursorsEnabled           = $this->_parent->getConf( 'runtime.resources.cursors.enabled'                  ) ;
     $this->customersEnabled         = $this->_parent->getConf( 'runtime.resources.customers.enabled'                ) ;
-    $this->customersCacheEnabled    = $this->_parent->getConf( 'runtime.resources.customers.cache.enabled'          ) ;
-    $this->customersCacheCheck      = $this->_parent->getConf( 'runtime.resources.customers.cache.checkEveryInSecs' ) ;
-    $this->customersCacheExpiration = $this->_parent->getConf( 'runtime.resources.customers.cache.expirationInSecs' ) ;
     $this->conversationsEnabled     = $this->_parent->getConf( 'runtime.resources.conversations.enabled'            ) ;
   }
 
@@ -79,12 +80,12 @@ class MessagingManager extends Module
       ],
       'outMessageIds' => [],
     ] ;
-    if( $this->customersCacheEnabled )
+    if( $this->customerCacheEnabled )
     {
-      $mainPattern[ 'customersCache' ] = [
-        'nextCheckTs'                    => Datetimes::nowMs() + $this->customersCacheCheck,
-        'userRecords'                    => [],
-        'expirationMap'                  => [],
+      $mainPattern[ 'customerCache' ] = [
+        'nextCheckTs'                   => Datetimes::nowMs() + $this->customerCacheCheck,
+        'userRecords'                   => [],
+        'expirationMap'                 => [],
       ] ;
     }
     Resources::writeDefaultDataFile( $mainPattern ) ;
@@ -130,13 +131,13 @@ class MessagingManager extends Module
   */
   private  function addUserToCache( $userRecord, &$messagingData = null, $update = false )
   {
-    if( !$this->customersCacheEnabled ) return ;
+    if( !$this->customerCacheEnabled ) return ;
 
     $_messagingData = &$messagingData ;
     if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
 
     // If the user is already on the cache, update the expirationTs
-    if( array_key_exists( $userRecord[ 'conversationId' ], $_messagingData[ 'customersCache' ][ 'userRecords' ] ) && !$update )
+    if( array_key_exists( $userRecord[ 'conversationId' ], $_messagingData[ 'customerCache' ][ 'userRecords' ] ) && !$update )
     {
       $this->updateUserCacheExpiration( $userRecord[ 'conversationId' ], $userRecord[ 'id' ], $_messagingData ) ;
       Resources::writeDefaultDataFile( $_messagingData ) ;
@@ -144,8 +145,8 @@ class MessagingManager extends Module
     }
 
     $userRecord[ 'expirationTs' ] = Datetimes::nowMs() + $this->_parent->getConf( 'runtime.resources.customers.cache.expirationInSecs' ) * 1000 ;
-    $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $userRecord[ 'conversationId' ] ] = $userRecord ;
-    $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $userRecord[ 'expirationTs'   ] ] = $userRecord[ 'conversationId' ] ;
+    $_messagingData[ 'customerCache' ][ 'userRecords'   ][ $userRecord[ 'conversationId' ] ] = $userRecord ;
+    $_messagingData[ 'customerCache' ][ 'expirationMap' ][ $userRecord[ 'expirationTs'   ] ] = $userRecord[ 'conversationId' ] ;
     $this->log( "==> record User " . $userRecord[ 'id' ] . ", conversationId='" . $userRecord[ 'conversationId' ] . "' in the customers cache", Logger::LOG_DEBUG, __METHOD__ ) ;
 
     if( empty( $messagingData ) ) Resources::writeDefaultDataFile( $_messagingData ) ;
@@ -153,16 +154,16 @@ class MessagingManager extends Module
 
   private  function updateUserCacheExpiration( $conversationId, $userId, &$messagingData = null )
   {
-    if( !$this->customersCacheEnabled ) return ;
+    if( !$this->customerCacheEnabled ) return ;
 
     $_messagingData = &$messagingData ;
     if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
 
-    if( !array_key_exists( $conversationId, $_messagingData[ 'customersCache' ][ 'userRecords' ] ) ) return ;
+    if( !array_key_exists( $conversationId, $_messagingData[ 'customerCache' ][ 'userRecords' ] ) ) return ;
 
-    unset( $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] ] ) ;
-    $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] = Datetimes::nowMs() + $this->_parent->getConf( 'runtime.resources.customers.cache.expirationInSecs' ) * 1000 ;
-    $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] ] = $conversationId ;
+    unset( $_messagingData[ 'customerCache' ][ 'expirationMap' ][ $_messagingData[ 'customerCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] ] ) ;
+    $_messagingData[ 'customerCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] = Datetimes::nowMs() + $this->_parent->getConf( 'runtime.resources.customers.cache.expirationInSecs' ) * 1000 ;
+    $_messagingData[ 'customerCache' ][ 'expirationMap' ][ $_messagingData[ 'customerCache' ][ 'userRecords'   ][ $conversationId ][ 'expirationTs' ] ] = $conversationId ;
     $this->log( "==> updated expiration for user " . $userId . ", conversationId='" . $conversationId . "' in the customers cache", Logger::LOG_DEBUG, __METHOD__ ) ;
 
     if( empty( $messagingData ) ) Resources::writeDefaultDataFile( $_messagingData ) ;
@@ -170,11 +171,11 @@ class MessagingManager extends Module
 
   private  function getUserFromCache( $conversationId, &$messagingData = null )
   {
-    if( !$this->customersCacheEnabled || empty( $messagingData ) ) return null ;
+    if( !$this->customerCacheEnabled || empty( $messagingData ) ) return null ;
 
-    if( array_key_exists( $conversationId, $messagingData[ 'customersCache' ][ 'userRecords' ] ) )
+    if( array_key_exists( $conversationId, $messagingData[ 'customerCache' ][ 'userRecords' ] ) )
     {
-      $userRecord = $messagingData[ 'customersCache' ][ 'userRecords' ][ $conversationId ] ;
+      $userRecord = $messagingData[ 'customerCache' ][ 'userRecords' ][ $conversationId ] ;
       unset( $userRecord[ 'expirationTs' ] ) ;
       $this->log( "==> getting userRecord from cache : " . json_encode( $userRecord ), Logger::LOG_DEBUG, __METHOD__ ) ;
       return $userRecord ;
@@ -185,7 +186,7 @@ class MessagingManager extends Module
 
   private  function cleanUserCache( &$messagingData = null )
   {
-    if( !$this->customersCacheEnabled ) return ;
+    if( !$this->customerCacheEnabled ) return ;
 
     $this->log( "Cleaning cache...", Logger::LOG_DEBUG, __METHOD__ ) ;
     $nbClean = 0 ;
@@ -193,16 +194,16 @@ class MessagingManager extends Module
     if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
 
     $nowMs = Datetimes::nowMs() ;
-    if( $nowMs <= $_messagingData[ 'customersCache' ][ 'nextCheckTs' ] ) return ;
-    $_messagingData[ 'customersCache' ][ 'nextCheckTs' ] = $nowMs + $this->_parent->getConf( 'runtime.resources.customers.cache.checkEveryInSecs' ) * 1000 ;
+    if( $nowMs <= $_messagingData[ 'customerCache' ][ 'nextCheckTs' ] ) return ;
+    $_messagingData[ 'customerCache' ][ 'nextCheckTs' ] = $nowMs + $this->_parent->getConf( 'runtime.resources.customers.cache.checkEveryInSecs' ) * 1000 ;
 
-    foreach( $_messagingData[ 'customersCache' ][ 'expirationMap' ] as $ms => $conversationId )
+    foreach( $_messagingData[ 'customerCache' ][ 'expirationMap' ] as $ms => $conversationId )
     {
       if( $nowMs > intval( $ms ) )
       {
         $this->log( "==> removing conversationId " . $conversationId . " from cache", Logger::LOG_TRACE, __METHOD__ ) ;
-        unset( $_messagingData[ 'customersCache' ][ 'userRecords'   ][ $conversationId ] ) ;
-        unset( $_messagingData[ 'customersCache' ][ 'expirationMap' ][ $ms             ] ) ;
+        unset( $_messagingData[ 'customerCache' ][ 'userRecords'   ][ $conversationId ] ) ;
+        unset( $_messagingData[ 'customerCache' ][ 'expirationMap' ][ $ms             ] ) ;
         $nbClean++ ;
       }
     }
@@ -353,7 +354,7 @@ class MessagingManager extends Module
         && array_key_exists( 'user'         , $_conversationsData[ 'conversations' ][ $conversationId ] ) )
     {
       $userRecord = $_conversationsData[ 'conversations' ][ $conversationId ][ 'user' ] ;
-      if( $this->customersCacheEnabled )
+      if( $this->customerCacheEnabled )
       {
         $this->addUserToCache( $userRecord, $_messagingData ) ;
         Resources::writeDefaultDataFile( $_messagingData ) ;
@@ -364,7 +365,7 @@ class MessagingManager extends Module
     // Get it from Facebook
     if( !$doRequest ) return $userRecord ;
     $userRecord = $this->getFacebookConversationRecipientRecord( $conversationId ) ;
-    if( !empty( $userRecord ) && $this->customersCacheEnabled )
+    if( !empty( $userRecord ) && $this->customerCacheEnabled )
     {
       $this->addUserToCache( $userRecord, $_messagingData ) ;
       Resources::writeDefaultDataFile( $_messagingData ) ;
@@ -613,7 +614,7 @@ class MessagingManager extends Module
 
     $_to = $to ;
     // Only for debug log
-    if( !empty( $_conversationId ) && ( $this->customersCacheEnabled || $this->conversationsEnabled ) )
+    if( !empty( $_conversationId ) && ( $this->customerCacheEnabled || $this->conversationsEnabled ) )
     {
       $userRecord = $this->getConversationUserRecord( $_conversationId, $messagingData, $conversationsData, false ) ;
       if( !empty( $userRecord ) )

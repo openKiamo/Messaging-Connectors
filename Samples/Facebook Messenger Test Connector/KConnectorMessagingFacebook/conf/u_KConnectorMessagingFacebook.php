@@ -13,16 +13,16 @@ return [
       'dateFormat'                   => 'Y-m-d\TH:i:s\+0000',
     ],
     'resources'                   => [
+      'customerCache'                => [
+        'enabled'                       => true,  // Should be let enabled for the most recent conversations, in order to avoid useless Facebook API requests
+        'checkEveryInSecs'              => 180,
+        'expirationInSecs'              => 300,
+      ],
       'cursors'                      => [
         'enabled'                       => false,
       ],
       'customers'                    => [
         'enabled'                       => false,
-        'cache'                         => [
-          'enabled'                        => true,
-          'checkEveryInSecs'               => 180,
-          'expirationInSecs'               => 300,
-        ],
       ],
       'conversations'                => [
         'enabled'                       => false,
