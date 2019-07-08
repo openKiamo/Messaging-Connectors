@@ -30,11 +30,13 @@ class MessagingManager extends Module
 
   public   function initRuntimeData()
   {
-    $this->selfId                = $this->_parent->getConf( 'accessData.credentials.userId'             ) ;
-    $this->customerCacheEnabled  = $this->_parent->getConf( 'runtime.resources.customerCache.enabled'   ) ;
-    $this->cursorsEnabled        = $this->_parent->getConf( 'runtime.resources.cursors.enabled'         ) ;
-    $this->customersEnabled      = $this->_parent->getConf( 'runtime.resources.customers.enabled'       ) ;
-    $this->conversationsEnabled  = $this->_parent->getConf( 'runtime.resources.conversations.enabled'   ) ;
+    $this->selfId                  = $this->_parent->getConf( 'accessData.credentials.userId'                    ) ;
+    $this->customerCacheEnabled    = $this->_parent->getConf( 'runtime.resources.customerCache.enabled'          ) ;
+    $this->customerCacheCheck      = $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
+    $this->customerCacheExpiration = $this->_parent->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
+    $this->cursorsEnabled          = $this->_parent->getConf( 'runtime.resources.cursors.enabled'                ) ;
+    $this->customersEnabled        = $this->_parent->getConf( 'runtime.resources.customers.enabled'              ) ;
+    $this->conversationsEnabled    = $this->_parent->getConf( 'runtime.resources.conversations.enabled'          ) ;
   }
 
   public   function initResourceFiles()
@@ -58,7 +60,7 @@ class MessagingManager extends Module
     if( $this->customerCacheEnabled )
     {
       $mainPattern[ 'customerCache' ] = [
-        'nextCheckTs'                    => Datetimes::nowTs() + $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ),
+        'nextCheckTs'                    => Datetimes::nowTs() + $this->customerCacheCheck,
         'userRecords'                    => [],
         'expirationMap'                  => [],
       ] ;
@@ -285,7 +287,7 @@ class MessagingManager extends Module
     $_messagingData = &$messagingData ;
     if( empty( $messagingData ) ) $_messagingData = Resources::readDefaultDataFile() ;
 
-    $userRecord[ 'expirationTs' ] = Datetimes::nowTs() + $this->_parent->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
+    $userRecord[ 'expirationTs' ] = Datetimes::nowTs() + $this->customerCacheExpiration ;
     $_messagingData[ 'customerCache' ][ 'userRecords' ][ $userRecord[ 'id' ] ] = $userRecord ;
     $_messagingData[ 'customerCache' ][ 'expirationMap' ][ $userRecord[ 'expirationTs' ] ] = $userRecord[ 'id' ] ;
     $this->log( "==> record User " . $userRecord[ 'id' ] . " in the customers cache", Logger::LOG_DEBUG, __METHOD__ ) ;
@@ -317,7 +319,7 @@ class MessagingManager extends Module
 
     $nowTs = Datetimes::nowTs() ;
     if( $nowTs <= $_messagingData[ 'customerCache' ][ 'nextCheckTs' ] ) return ;
-    $_messagingData[ 'customerCache' ][ 'nextCheckTs' ] = $nowTs + $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
+    $_messagingData[ 'customerCache' ][ 'nextCheckTs' ] = $nowTs + $this->customerCacheCheck ;
 
     foreach( $_messagingData[ 'customerCache' ][ 'expirationMap' ] as $ts => $userId )
     {
