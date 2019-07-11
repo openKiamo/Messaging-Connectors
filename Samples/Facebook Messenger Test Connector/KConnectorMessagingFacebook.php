@@ -1,6 +1,20 @@
 <?php
 namespace UserFiles\Messaging\Connector ;
 
+
+// Kiamo Messaging Connector Utilities
+// ---
+define( 'KIAMO_MESSAGING_UTILITY', '../../../../../www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging' ) ;
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "ConnectorConfiguration.php"    ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "GenericConnectorInterface.php" ;
+
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
+
+
+// Messaging Connector Toolkit
+// ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'KConnectorMessagingFacebook' . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'KConnectorMessagingFacebook' . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
@@ -8,10 +22,9 @@ use KiamoConnectorSampleToolsFacebook\Logger ;
 use KiamoConnectorSampleToolsFacebook\Module ;
 use UserFiles\Messaging\Connector\KConnectorMessagingFacebook\MessagingManager ;
 
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
 
-
+// Kiamo Messaging Connector
+// ---
 class KConnectorMessagingFacebook extends    Module
                                   implements GenericConnectorInterface
 {

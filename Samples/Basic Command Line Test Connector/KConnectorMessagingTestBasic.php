@@ -2,6 +2,19 @@
 namespace UserFiles\Messaging\Connector ;
 
 
+// Kiamo Messaging Connector Utilities
+// ---
+define( 'KIAMO_MESSAGING_UTILITY', '../../../../../www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging' ) ;
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "ConnectorConfiguration.php"    ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "GenericConnectorInterface.php" ;
+
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
+
+
+// Messaging Connector Toolkit
+// ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
@@ -9,12 +22,11 @@ use KiamoConnectorSampleToolsBasic\Logger ;
 use KiamoConnectorSampleToolsBasic\Module ;
 use UserFiles\Messaging\Connector\KConnectorMessagingTestBasic\MessagingManager ;
 
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
 
-
+// Kiamo Messaging Connector
+// ---
 class KConnectorMessagingTestBasic extends    Module
-                                 implements GenericConnectorInterface
+                                   implements GenericConnectorInterface
 {
   const DisplayName = 'Kiamo Connector Messaging Test Basic' ;
   const RootPath    = __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" ;

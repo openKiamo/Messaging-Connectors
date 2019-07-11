@@ -3,9 +3,18 @@
 namespace UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
 
 
+// Kiamo Messaging Connector Utilities
+// ---
+require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic.php" ;
+
+use UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+
+
+// Messaging Connector Toolkit
+// ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
-
 
 use KiamoConnectorSampleToolsBasic\Datetimes ;
 use KiamoConnectorSampleToolsBasic\Logger    ;
@@ -14,6 +23,9 @@ use KiamoConnectorSampleToolsBasic\Resources ;
 use KiamoConnectorSampleToolsBasic\Uuids     ;
 
 
+
+// Command Line Tester
+// ---
 class CommandLineTester extends Module
 {
   const VerbTest = 'test' ;

@@ -2,9 +2,19 @@
 
 namespace UserFiles\Messaging\Connector\KConnectorMessagingFacebook ;
 
+
+// Kiamo Messaging Connector Utilities
+// ---
+require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "KConnectorMessagingFacebook.php" ;
+
+use UserFiles\Messaging\Connector\KConnectorMessagingFacebook ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+
+
+// Messaging Connector Toolkit
+// ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
-
 
 use KiamoConnectorSampleToolsFacebook\Datetimes ;
 use KiamoConnectorSampleToolsFacebook\Logger    ;
@@ -14,15 +24,8 @@ use KiamoConnectorSampleToolsFacebook\Uuids     ;
 use KiamoConnectorSampleToolsFacebook\Webs      ;
 
 
-class ConnectorStub extends Module
-{
-  public    function __construct( $name )
-  {
-    parent::__construct( null, null, null, $name ) ;
-    $this->_msgManager = new MessagingManager( $this ) ;
-  }
-}
-
+// Command Line Tester
+// ---
 class CommandLineTester extends Module
 {
   const VerbTest = 'test' ;
@@ -37,7 +40,7 @@ class CommandLineTester extends Module
   {
     parent::__construct() ;
 
-    $this->connector = new ConnectorStub( "KConnectorMessagingFacebook" ) ;
+    $this->connector = new KConnectorMessagingFacebook( new ConnectorConfiguration ) ;
     $this->defineTestFunctions() ;
     if( $this->setTestId( $strictMode ) ) $this->run() ;
   }
