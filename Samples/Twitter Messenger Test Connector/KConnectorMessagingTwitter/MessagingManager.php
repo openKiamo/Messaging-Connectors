@@ -8,21 +8,20 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "au
 
 use KiamoConnectorSampleToolsTwitter\Datetimes ;
 use KiamoConnectorSampleToolsTwitter\Logger    ;
-use KiamoConnectorSampleToolsTwitter\Module    ;
+use KiamoConnectorSampleToolsTwitter\SubModule ;
 use KiamoConnectorSampleToolsTwitter\Resources ;
 use KiamoConnectorSampleToolsTwitter\Uuids     ;
 use KiamoConnectorSampleToolsTwitter\Webs      ;
 
 
-class MessagingManager extends Module
+class MessagingManager extends SubModule
 {
   public    function __construct( &$_parent )
   {
-    parent::__construct() ;
-    $this->_parent = $_parent ;
+    parent::__construct( $_parent, get_class( $_parent ) ) ;
 
-    $this->log( "Service : " . $this->_parent->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
-    $this->log( "Version : " . $this->_parent->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Service : " . $this->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Version : " . $this->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
     
     $this->initRuntimeData()   ;
     $this->initResourceFiles() ;
@@ -30,13 +29,13 @@ class MessagingManager extends Module
 
   public   function initRuntimeData()
   {
-    $this->selfId                  = $this->_parent->getConf( 'accessData.credentials.userId'                    ) ;
-    $this->customerCacheEnabled    = $this->_parent->getConf( 'runtime.resources.customerCache.enabled'          ) ;
-    $this->customerCacheCheck      = $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
-    $this->customerCacheExpiration = $this->_parent->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
-    $this->cursorsEnabled          = $this->_parent->getConf( 'runtime.resources.cursors.enabled'                ) ;
-    $this->customersEnabled        = $this->_parent->getConf( 'runtime.resources.customers.enabled'              ) ;
-    $this->conversationsEnabled    = $this->_parent->getConf( 'runtime.resources.conversations.enabled'          ) ;
+    $this->selfId                  = $this->getConf( 'accessData.credentials.userId'                    ) ;
+    $this->customerCacheEnabled    = $this->getConf( 'runtime.resources.customerCache.enabled'          ) ;
+    $this->customerCacheCheck      = $this->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
+    $this->customerCacheExpiration = $this->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
+    $this->cursorsEnabled          = $this->getConf( 'runtime.resources.cursors.enabled'                ) ;
+    $this->customersEnabled        = $this->getConf( 'runtime.resources.customers.enabled'              ) ;
+    $this->conversationsEnabled    = $this->getConf( 'runtime.resources.conversations.enabled'          ) ;
   }
 
   public   function initResourceFiles()
@@ -113,10 +112,10 @@ class MessagingManager extends Module
 
   public   function _buildCallContext( $verb, $urlParams = null )
   {
-    $baseUrl =         $this->_parent->getConf( 'accessData.apiBaseUrl'    )
-               . '/' . $this->_parent->getConf( 'accessData.apiVersion'    )
-               . '/' . $this->_parent->getConf( 'accessData.verbs.' . $verb . '.route' )
-               . '/' . $this->_parent->getConf( 'accessData.verbs.' . $verb . '.verb'  ) ;
+    $baseUrl =         $this->getConf( 'accessData.apiBaseUrl'    )
+               . '/' . $this->getConf( 'accessData.apiVersion'    )
+               . '/' . $this->getConf( 'accessData.verbs.' . $verb . '.route' )
+               . '/' . $this->getConf( 'accessData.verbs.' . $verb . '.verb'  ) ;
     $fullUrl = $baseUrl ;
     if( !empty( $urlParams ) )
     {
@@ -132,8 +131,8 @@ class MessagingManager extends Module
       'verb'    => $verb,
       'baseUrl' => $baseUrl,
       'fullUrl' => $fullUrl,
-      'method'  => $this->_parent->getConf( 'accessData.verbs.' . $verb . '.method' ),
-      'type'    => $this->_parent->getConf( 'accessData.verbs.' . $verb . '.type'   ),
+      'method'  => $this->getConf( 'accessData.verbs.' . $verb . '.method' ),
+      'type'    => $this->getConf( 'accessData.verbs.' . $verb . '.type'   ),
     ] ;
     return $res ;
   }
@@ -142,12 +141,12 @@ class MessagingManager extends Module
   public   function _buildOAuthBaseParams()
   {
     $res = [
-      $this->_parent->getConf( 'accessData.oauthData.keys.consumer'        ) => $this->_parent->getConf( 'accessData.credentials.consumerKey'   ),
-      $this->_parent->getConf( 'accessData.oauthData.keys.nonce'           ) => Uuids::get( true, 32 ),
-      $this->_parent->getConf( 'accessData.oauthData.keys.signatureMethod' ) => $this->_parent->getConf( 'accessData.oauthData.signatureMethod' ),
-      $this->_parent->getConf( 'accessData.oauthData.keys.timestamp'       ) => Datetimes::nowTs(),
-      $this->_parent->getConf( 'accessData.oauthData.keys.token'           ) => $this->_parent->getConf( 'accessData.credentials.oauthToken'    ),
-      $this->_parent->getConf( 'accessData.oauthData.keys.version'         ) => $this->_parent->getConf( 'accessData.oauthData.version'         ),
+      $this->getConf( 'accessData.oauthData.keys.consumer'        ) => $this->getConf( 'accessData.credentials.consumerKey'   ),
+      $this->getConf( 'accessData.oauthData.keys.nonce'           ) => Uuids::get( true, 32 ),
+      $this->getConf( 'accessData.oauthData.keys.signatureMethod' ) => $this->getConf( 'accessData.oauthData.signatureMethod' ),
+      $this->getConf( 'accessData.oauthData.keys.timestamp'       ) => Datetimes::nowTs(),
+      $this->getConf( 'accessData.oauthData.keys.token'           ) => $this->getConf( 'accessData.credentials.oauthToken'    ),
+      $this->getConf( 'accessData.oauthData.keys.version'         ) => $this->getConf( 'accessData.oauthData.version'         ),
     ] ;
     return $res ;
   }
@@ -180,15 +179,15 @@ class MessagingManager extends Module
     $signBaseStr = $callContext[ 'method' ] . '&' . rawurlencode( $callContext[ 'baseUrl' ] ) . '&' . rawurlencode( $paramStr ) ;
 
     // Signing key
-    $signKey =         rawurlencode( $this->_parent->getConf( 'accessData.credentials.consumerSecret'   ) )
-               . '&' . rawurlencode( $this->_parent->getConf( 'accessData.credentials.oauthTokenSecret' ) ) ;
+    $signKey =         rawurlencode( $this->getConf( 'accessData.credentials.consumerSecret'   ) )
+               . '&' . rawurlencode( $this->getConf( 'accessData.credentials.oauthTokenSecret' ) ) ;
 
 
     // OAuth Signature
-    $oauthSign = base64_encode( hash_hmac( $this->_parent->getConf( 'accessData.oauthData.hashMacMethod' ), $signBaseStr, $signKey, $raw_output = true ) ) ;
+    $oauthSign = base64_encode( hash_hmac( $this->getConf( 'accessData.oauthData.hashMacMethod' ), $signBaseStr, $signKey, $raw_output = true ) ) ;
 
     // Add signature to oauth base params
-    $oauthBaseParams[ $this->_parent->getConf( 'accessData.oauthData.keys.signature' ) ] = $oauthSign ;
+    $oauthBaseParams[ $this->getConf( 'accessData.oauthData.keys.signature' ) ] = $oauthSign ;
     ksort( $oauthBaseParams ) ;
     
     return $oauthSign ;
@@ -420,7 +419,7 @@ class MessagingManager extends Module
     $this->log( $slog, Logger::LOG_INFO, __METHOD__ ) ;
     
     $urlParams = [] ;
-    $pageCount = $this->_parent->getConf( 'accessData.verbs.messageList.paginationCount' ) ;
+    $pageCount = $this->getConf( 'accessData.verbs.messageList.paginationCount' ) ;
     if( empty( $pageCount ) )
     {
       $urlParams = null ;

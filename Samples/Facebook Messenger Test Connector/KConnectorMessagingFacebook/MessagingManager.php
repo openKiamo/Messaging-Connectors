@@ -8,21 +8,20 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "au
 
 use KiamoConnectorSampleToolsFacebook\Datetimes ;
 use KiamoConnectorSampleToolsFacebook\Logger    ;
-use KiamoConnectorSampleToolsFacebook\Module    ;
+use KiamoConnectorSampleToolsFacebook\SubModule ;
 use KiamoConnectorSampleToolsFacebook\Resources ;
 use KiamoConnectorSampleToolsFacebook\Uuids     ;
 use KiamoConnectorSampleToolsFacebook\Webs      ;
 
 
-class MessagingManager extends Module
+class MessagingManager extends SubModule
 {
   public    function __construct( &$_parent )
   {
-    parent::__construct() ;
-    $this->_parent = $_parent ;
+    parent::__construct( $_parent, get_class( $_parent ) ) ;
 
-    $this->log( "Service : " . $this->_parent->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
-    $this->log( "Version : " . $this->_parent->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Service : " . $this->getConf( "self.service" ), Logger::LOG_INFO, __METHOD__ ) ;
+    $this->log( "Version : " . $this->getConf( "self.version" ), Logger::LOG_INFO, __METHOD__ ) ;
     
     $this->initRuntimeData()   ;
     $this->initAccessData()    ;
@@ -31,21 +30,21 @@ class MessagingManager extends Module
 
   public   function initRuntimeData()
   {
-    $this->selfName                  = $this->_parent->getConf( "accessData.pageName"                              ) ;
-    $this->selfId                    = $this->_parent->getConf( "accessData.pageId"                                ) ;
+    $this->selfName                  = $this->getConf( "accessData.pageName"                              ) ;
+    $this->selfId                    = $this->getConf( "accessData.pageId"                                ) ;
 
-    $this->conversationsLimit        = $this->_parent->getConf( "runtime.pagination.limitPerRequestConversations"  ) ;
-    $this->messagesLimit             = $this->_parent->getConf( "runtime.pagination.limitPerRequestMessages"       ) ;
+    $this->conversationsLimit        = $this->getConf( "runtime.pagination.limitPerRequestConversations"  ) ;
+    $this->messagesLimit             = $this->getConf( "runtime.pagination.limitPerRequestMessages"       ) ;
 
-    $this->dateFormat                = $this->_parent->getConf( "runtime.datetimes.dateFormat"                     ) ;
+    $this->dateFormat                = $this->getConf( "runtime.datetimes.dateFormat"                     ) ;
 
-    $this->customerCacheEnabled      = $this->_parent->getConf( 'runtime.resources.customerCache.enabled'          ) ;
-    $this->customerCacheCheck        = $this->_parent->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
-    $this->customerCacheExpiration   = $this->_parent->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
+    $this->customerCacheEnabled      = $this->getConf( 'runtime.resources.customerCache.enabled'          ) ;
+    $this->customerCacheCheck        = $this->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
+    $this->customerCacheExpiration   = $this->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
 
-    $this->cursorsEnabled            = $this->_parent->getConf( 'runtime.resources.cursors.enabled'                ) ;
-    $this->customersEnabled          = $this->_parent->getConf( 'runtime.resources.customers.enabled'              ) ;
-    $this->conversationsEnabled      = $this->_parent->getConf( 'runtime.resources.conversations.enabled'          ) ;
+    $this->cursorsEnabled            = $this->getConf( 'runtime.resources.cursors.enabled'                ) ;
+    $this->customersEnabled          = $this->getConf( 'runtime.resources.customers.enabled'              ) ;
+    $this->conversationsEnabled      = $this->getConf( 'runtime.resources.conversations.enabled'          ) ;
   }
 
   private  function initAccessData()
@@ -53,7 +52,7 @@ class MessagingManager extends Module
     $fieldsArr = [ 'apiBaseUrl', 'apiVersion', 'appName', 'appId', 'appSecret', 'pageName', 'pageId', 'accessToken' ] ;
     foreach( $fieldsArr as $field )
     {
-      $this->$field = $this->_parent->getConf( "accessData." . $field ) ;
+      $this->$field = $this->getConf( "accessData." . $field ) ;
       $this->log( "Access data : " . $field . " = " . $this->$field, Logger::LOG_INFO, __METHOD__ ) ;
     }
     $this->baseUrl = $this->apiBaseUrl . '/' . $this->apiVersion . '/' ;
