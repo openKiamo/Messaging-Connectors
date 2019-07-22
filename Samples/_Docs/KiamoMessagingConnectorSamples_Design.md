@@ -285,8 +285,3 @@ The cache may be required to map customer ids and conversation ids for a given p
 During the read / send message method execution flow, the runtime configuration will be used to drive the algorithm decisions, for instance, the number of items per pagination page, the date/time formats, the encoding conversion, …
 
  Usually, this behavior is build and loaded in RAM only one time per connector instantiation, for efficiency reasons.
-
-
-
-------
-

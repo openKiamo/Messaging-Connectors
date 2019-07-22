@@ -527,7 +527,3 @@ The Command Line Tester is called this way :
 The tested `Module` and/or `SubModule` instances are created while the `CommandLineTester` is instantiated. The defined test functions are setup in an array. This way it’s easier to add and access the test functions.
 
 Most of the time the sample package’s `CommandLineTester` contains the key tests used to verify the proper implementation behavior (authentication, single API request, user data management, …).
-
-
-
-------
