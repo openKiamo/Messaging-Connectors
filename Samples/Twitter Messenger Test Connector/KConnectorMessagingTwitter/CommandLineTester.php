@@ -120,6 +120,27 @@ class CommandLineTester extends Module
     ] ;
 
 
+    $this->testFunctions[ 'test04' ] = [
+      'purpose'  => 'get User Data',
+      'function' => function()
+      {
+        $verb       = 'userShow'            ;
+        //$paramName  = 'user_id'             ;
+        //$paramValue = 'xxxxxxxxxxxxxxxxxx'  ;
+        $paramName  = 'screen_name'         ;
+        $paramValue = 'xxxxxxxxxxxxx'       ;
+        $params     = []                    ;
+        $params[ $paramName ] = $paramValue ;
+        $callRes = $this->connector->_msgManager->twitterRequest( $verb, $params, null ) ;
+        $res                  = [] ;
+        $res[ 'id'          ] = $callRes[ 'id'          ] ;
+        $res[ 'name'        ] = $callRes[ 'name'        ] ;
+        $res[ 'screen_name' ] = $callRes[ 'screen_name' ] ;
+        echo "User data = " . json_encode( $res, JSON_PRETTY_PRINT ) . "\n" ; ;
+      }
+    ] ;
+
+
     /*
     $this->testFunctions[ 'testXX' ] = [
       'purpose'  => 'xxxxxxxxxxxxx',
