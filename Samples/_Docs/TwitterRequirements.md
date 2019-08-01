@@ -44,7 +44,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Get the User Id](#getTheUserId)
 
-
 ------
 
 
@@ -102,7 +101,7 @@ Create a **[Twitter page](http://www.twitter.com)**.
 
 In order to receive customers' messages, you must enable direct messages from anyone :
 
-* on the left column, click on ![](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/_Docs/data/TW_more.png),
+* on the left column, click on ![](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/_Docs/data/TW_More.png),
 * on the left column, click on "**Settings and privacy**",
 * on the center column, click on "**Privacy and safety**",
 * on the right column, toggle on the "**Direct Messages**" => "Receive messages from anyone".
