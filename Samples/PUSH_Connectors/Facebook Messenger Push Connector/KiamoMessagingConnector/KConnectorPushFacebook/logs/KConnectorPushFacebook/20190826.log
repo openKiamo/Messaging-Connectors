@@ -1,0 +1,1422 @@
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_153716][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_153716][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_153716][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_153716][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_153716][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_153757][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_153757][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_153757][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_153757][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_153757][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_153758][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_153758][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_153758][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_153758][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_153758][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_153921][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_153921][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_153921][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_153921][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_153921][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_153921][INFO ][5d63e1092521f][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_153921][INFO ][5d63e1092521f][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_153921][INFO ][5d63e1092521f][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154022][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154022][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154022][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154022][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154022][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154022][INFO ][5d63e146f032d][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154023][INFO ][5d63e146f032d][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154023][INFO ][5d63e146f032d][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154124][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154124][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154124][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154124][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154124][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154124][INFO ][5d63e184392b2][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154124][INFO ][5d63e184392b2][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154124][INFO ][5d63e184392b2][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154224][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154224][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154224][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154224][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154224][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154224][INFO ][5d63e1c0e4a1e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154225][INFO ][5d63e1c0e4a1e][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154225][INFO ][5d63e1c0e4a1e][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154325][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154325][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154325][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154325][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154325][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154325][INFO ][5d63e1fd934a3][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154325][INFO ][5d63e1fd934a3][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154325][INFO ][5d63e1fd934a3][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154426][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154426][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154426][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154426][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154426][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154426][INFO ][5d63e23a4bb6c][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154426][INFO ][5d63e23a4bb6c][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154426][INFO ][5d63e23a4bb6c][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154526][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154526][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154526][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154526][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154526][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154526][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154527][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154527][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154527][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154527][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154527][INFO ][5d63e27701dd7][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154527][INFO ][5d63e27701dd7][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154527][INFO ][5d63e27701dd7][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_154527][INFO ][5d63e27701dd7][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154630][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154630][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154630][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154630][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154630][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154630][INFO ][5d63e2b699f41][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154631][INFO ][5d63e2b699f41][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154631][INFO ][5d63e2b699f41][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_154631][INFO ][5d63e2b699f41][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154732][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154732][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154732][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154732][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154732][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154732][INFO ][5d63e2f4a758a][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154732][INFO ][5d63e2f4a758a][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154732][INFO ][5d63e2f4a758a][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_154732][INFO ][5d63e2f4a758a][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154834][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154834][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154834][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154834][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154834][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154834][INFO ][5d63e33286469][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154834][INFO ][5d63e33286469][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_154834][INFO ][5d63e33286469][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_154834][INFO ][5d63e33286469][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_154935][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_154935][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_154935][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_154935][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_154935][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_154935][INFO ][5d63e36f83764][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_154935][INFO ][5d63e36f83764][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_154935][INFO ][5d63e36f83764][KConnectorPushFacebook::fetch                     ] Fetched [] message(s)
+[20190826_154935][INFO ][5d63e36f83764][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155036][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155036][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155036][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155036][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155036][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155036][INFO ][5d63e3ac41208][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155036][INFO ][5d63e3ac41208][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155036][INFO ][5d63e3ac41208][KConnectorPushFacebook::fetch                     ] Fetched [] message(s)
+[20190826_155036][INFO ][5d63e3ac41208][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155238][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155238][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155238][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155238][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155238][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155238][INFO ][5d63e4262b338][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155238][DEBUG][5d63e4262b338][                                                  ] !!!!!!!!!!!!!!!!!!!!!! string
+[20190826_155238][INFO ][5d63e4262b338][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_155238][INFO ][5d63e4262b338][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_155238][INFO ][5d63e4262b338][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155338][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155338][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155338][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155338][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155338][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155338][INFO ][5d63e462dcba3][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155339][INFO ][5d63e462dcba3][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_155339][INFO ][5d63e462dcba3][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_155339][INFO ][5d63e462dcba3][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155439][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155439][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155439][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155439][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155439][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155439][INFO ][5d63e49f9c78b][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155439][INFO ][5d63e49f9c78b][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_155439][INFO ][5d63e49f9c78b][KConnectorPushFacebook::fetch                     ] Fetched "[]" message(s)
+[20190826_155439][INFO ][5d63e49f9c78b][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155540][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155540][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155540][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155540][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155540][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155540][INFO ][5d63e4dc44caf][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155540][INFO ][5d63e4dc44caf][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155540][INFO ][5d63e4dc44caf][KConnectorPushFacebook::fetch                     ] Fetched [] message(s)
+[20190826_155540][INFO ][5d63e4dc44caf][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155640][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155640][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155640][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155640][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155640][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155640][INFO ][5d63e518f14df][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155641][INFO ][5d63e518f14df][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155641][INFO ][5d63e518f14df][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155741][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155741][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155741][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155741][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155741][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155741][INFO ][5d63e555a603c][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155741][INFO ][5d63e555a603c][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155741][INFO ][5d63e555a603c][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155842][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155842][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155842][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155842][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155842][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155842][INFO ][5d63e5925cb8e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155842][INFO ][5d63e5925cb8e][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155842][INFO ][5d63e5925cb8e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_155943][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_155943][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_155943][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_155943][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_155943][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_155943][INFO ][5d63e5cf16a2e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_155943][INFO ][5d63e5cf16a2e][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! Array !!!!!!!!!
+[20190826_155943][INFO ][5d63e5cf16a2e][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_155943][INFO ][5d63e5cf16a2e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160043][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160043][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160043][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160043][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160043][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160043][INFO ][5d63e60be0062][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160044][INFO ][5d63e60be0062][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! [] !!!!!!!!!
+[20190826_160044][INFO ][5d63e60be0062][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160044][INFO ][5d63e60be0062][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160144][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160144][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160144][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160144][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160144][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160144][INFO ][5d63e648db39b][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160145][INFO ][5d63e648db39b][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! [] !!!!!!!!!
+[20190826_160145][INFO ][5d63e648db39b][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160145][INFO ][5d63e648db39b][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160245][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160245][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160245][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160245][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160245][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160245][INFO ][5d63e685bf2c5][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160245][INFO ][5d63e685bf2c5][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! [] !!!!!!!!!
+[20190826_160245][INFO ][5d63e685bf2c5][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160245][INFO ][5d63e685bf2c5][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160346][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160346][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160346][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160346][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160346][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160346][INFO ][5d63e6c273ce7][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160346][INFO ][5d63e6c273ce7][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! [] !!!!!!!!!
+[20190826_160346][INFO ][5d63e6c273ce7][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160346][INFO ][5d63e6c273ce7][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160447][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160447][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160447][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160447][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160447][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160447][INFO ][5d63e6ff30efd][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160447][INFO ][5d63e6ff30efd][MessagingManager::readMessages                    ] => !!!!!!!!!!!!!!!!!!!!!!!! [] !!!!!!!!!
+[20190826_160447][INFO ][5d63e6ff30efd][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160447][INFO ][5d63e6ff30efd][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160547][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160547][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160547][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160547][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160547][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160547][INFO ][5d63e73be43c0][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160548][INFO ][5d63e73be43c0][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_160548][INFO ][5d63e73be43c0][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_160548][INFO ][5d63e73be43c0][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzsh56ma","createdAt":1566828346312,"senderId":null,"senderName":"Sebastien Kiamo","content":"4\u00e8me tentative KInt"}
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160649][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160649][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160649][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160649][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160649][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160649][INFO ][5d63e77939c5d][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160651][WARNG][5d63e77939c5d][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_160651][INFO ][5d63e77939c5d][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160752][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160752][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160752][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160752][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160752][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160752][INFO ][5d63e7b83ab27][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160752][INFO ][5d63e7b83ab27][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160752][INFO ][5d63e7b83ab27][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160852][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160852][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160852][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160852][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160852][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160852][INFO ][5d63e7f4ef3d7][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160853][INFO ][5d63e7f4ef3d7][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160853][INFO ][5d63e7f4ef3d7][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_160953][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_160953][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_160953][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_160953][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_160953][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_160953][INFO ][5d63e831b0591][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_160953][INFO ][5d63e831b0591][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_160953][INFO ][5d63e831b0591][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161054][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161054][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161054][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161054][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161054][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161054][INFO ][5d63e86e6b413][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161054][INFO ][5d63e86e6b413][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_161054][INFO ][5d63e86e6b413][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_161054][DEBUG][5d63e86e6b413][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshb6mx","extid":"dtJx8unLzuzgazjXEJZkjYYUea2xFhgPl2taIpzw0bFPwJMYQwWafOYi75H8zdWWy0hgYiQ65M3n3kSJuhOLZg","type":"text","_date":"20190826_161027_801","extdate":1566828626159,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"5\u00e8me tentative KInt","encoding":"utf8"}}}
+[20190826_161054][INFO ][5d63e86e6b413][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshb6mx","createdAt":1566828626159,"senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"5\u00e8me tentative KInt"}
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161155][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161155][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161155][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161155][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161155][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161155][INFO ][5d63e8ab29753][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161155][INFO ][5d63e8ab29753][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161155][INFO ][5d63e8ab29753][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161255][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161255][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161255][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161255][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161255][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161255][INFO ][5d63e8e7d2779][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161256][INFO ][5d63e8e7d2779][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161256][INFO ][5d63e8e7d2779][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161356][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161356][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161356][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161356][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161356][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161356][INFO ][5d63e9249d421][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161356][INFO ][5d63e9249d421][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161356][INFO ][5d63e9249d421][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161457][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161457][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161457][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161457][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161457][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161457][INFO ][5d63e9615cd68][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161457][INFO ][5d63e9615cd68][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161457][INFO ][5d63e9615cd68][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161658][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161658][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161658][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161658][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161658][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161658][INFO ][5d63e9daa3ecd][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161658][INFO ][5d63e9daa3ecd][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161658][INFO ][5d63e9daa3ecd][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161759][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161759][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161759][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161759][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161759][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161759][INFO ][5d63ea1755252][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161759][INFO ][5d63ea1755252][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161759][INFO ][5d63ea1755252][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_161900][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_161900][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_161900][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_161900][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_161900][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_161900][INFO ][5d63ea542dbeb][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_161900][INFO ][5d63ea542dbeb][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_161900][INFO ][5d63ea542dbeb][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162001][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162001][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162001][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162001][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162001][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162001][INFO ][5d63ea914e2c9][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162001][INFO ][5d63ea914e2c9][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_162001][INFO ][5d63ea914e2c9][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_162001][DEBUG][5d63ea914e2c9][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshn4fg","extid":"yQuBxB20JIm68uu8g_SCK4YUea2xFhgPl2taIpzw0bEX7oLkLPt4rNed5CjCZ3gzVuNdk0t4JOmyLLYdiTJReQ","type":"text","_date":"20190826_161944_812","extdate":1566829183558,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"6\u00e8me tentative KInt","encoding":"utf8"}}}
+[20190826_162001][INFO ][5d63ea914e2c9][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshn4fg","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"6\u00e8me tentative KInt"}
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162102][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162102][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162102][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162102][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162102][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162102][INFO ][5d63eace7230e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162102][INFO ][5d63eace7230e][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_162102][INFO ][5d63eace7230e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162203][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162203][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162203][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162203][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162203][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162203][INFO ][5d63eb0b3c0db][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162203][INFO ][5d63eb0b3c0db][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_162203][INFO ][5d63eb0b3c0db][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_162203][DEBUG][5d63eb0b3c0db][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshpjme","extid":"3UaaIYybRtG1qqsMv6-41IYUea2xFhgPl2taIpzw0bHTYUPO-pxcMATrFbllt8IaCyl_xvBaSnf7dzeSAIYBpg","type":"text","_date":"20190826_162137_814","extdate":1566829296721,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"7\u00e8me tentativbe","encoding":"utf8"}}}
+[20190826_162203][INFO ][5d63eb0b3c0db][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshpjme","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"7\u00e8me tentativbe"}
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162210][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162210][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162210][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162210][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162210][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162210][INFO ][5d63eb12c0809][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"Qo8R5oF0X903aXb6_1566829330523","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"Coucou Mr","connector_id":"31","stream":"generic"}
+[20190826_162210][DEBUG][5d63eb12c0809][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63eb12c0db0","_date":"20190826_162210","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Coucou Mr","encoding":"utf8"}}}
+[20190826_162210][DEBUG][5d63eb12c0809][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63eb12c0db0","_date":"20190826_162210","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Coucou Mr","encoding":"utf8"}}}
+[20190826_162210][INFO ][5d63eb12c0809][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162304][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162304][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162304][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162304][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162304][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162304][INFO ][5d63eb48259b0][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162304][INFO ][5d63eb48259b0][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_162304][INFO ][5d63eb48259b0][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_162304][DEBUG][5d63eb48259b0][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshql2i","extid":"q_W_-i5DTI_0qlA8Inwi_YYUea2xFhgPl2taIpzw0bH7-lwQ-YBQVoTAaWERa-TJzDi_eyK5GTWv0GDhFzD0FQ","type":"text","_date":"20190826_162226_346","extdate":1566829345006,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"Hey Dude !","encoding":"utf8"}}}
+[20190826_162304][INFO ][5d63eb48259b0][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshql2i","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"Hey Dude !"}
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162321][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162321][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162321][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162321][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162321][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162321][INFO ][5d63eb596ea34][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"7g26u4Mc9TEdozLJ_1566829401229","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"plo cdpek,jhcbzs","connector_id":"31","stream":"generic"}
+[20190826_162321][DEBUG][5d63eb596ea34][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63eb596ef48","_date":"20190826_162321","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"plo cdpek,jhcbzs","encoding":"utf8"}}}
+[20190826_162321][DEBUG][5d63eb596ea34][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63eb596ef48","_date":"20190826_162321","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"plo cdpek,jhcbzs","encoding":"utf8"}}}
+[20190826_162321][INFO ][5d63eb596ea34][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_162404][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162404][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162404][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162404][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162405][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162405][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162405][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162405][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162405][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162405][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162405][INFO ][5d63eb85020ec][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162405][INFO ][5d63eb85020ec][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_162405][INFO ][5d63eb85020ec][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_162405][DEBUG][5d63eb85020ec][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshs0ro","extid":"gHKvwR1fOtOyaKMhaRDpwIYUea2xFhgPl2taIpzw0bF618XrlqWA2eg_EDd7eVmhacry_yunSCT0PpwefqvUzQ","type":"text","_date":"20190826_162333_348","extdate":1566829411895,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdkjbcsdknbks v \u00e9 \u00e0 \u00e7","encoding":"utf8"}}}
+[20190826_162405][INFO ][5d63eb85020ec][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshs0ro","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"csdkjbcsdknbks v \u00e9 \u00e0 \u00e7"}
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162505][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162505][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162505][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162505][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162505][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162505][INFO ][5d63ebc1cbc3c][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162505][INFO ][5d63ebc1cbc3c][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_162505][INFO ][5d63ebc1cbc3c][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162606][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162606][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162606][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162606][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162606][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162606][INFO ][5d63ebfea03ac][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162606][INFO ][5d63ebfea03ac][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_162606][INFO ][5d63ebfea03ac][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162707][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162707][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162707][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162707][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162707][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162707][INFO ][5d63ec3b51d80][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162707][INFO ][5d63ec3b51d80][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_162707][INFO ][5d63ec3b51d80][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162808][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162808][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162808][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162808][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162808][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162808][INFO ][5d63ec782d886][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162808][INFO ][5d63ec782d886][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_162808][INFO ][5d63ec782d886][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_162908][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_162908][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_162908][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_162908][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_162908][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_162908][INFO ][5d63ecb4dce18][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_162909][INFO ][5d63ecb4dce18][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_162909][INFO ][5d63ecb4dce18][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_162909][DEBUG][5d63ecb4dce18][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzshy5dn","extid":"5DyQYBd25kJaa2NPhF22bIYUea2xFhgPl2taIpzw0bFj6lPRC-Rd48j07QxFDU1ADU48yiVdiNH8o94bSCz1IA","type":"text","_date":"20190826_162819_259","extdate":1566829697879,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"Testing 1","encoding":"utf8"}}}
+[20190826_162909][INFO ][5d63ecb4dce18][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzshy5dn","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"Testing 1"}
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163009][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163009][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163009][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163009][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163009][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163009][INFO ][5d63ecf1ba39a][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163009][INFO ][5d63ecf1ba39a][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_163009][INFO ][5d63ecf1ba39a][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163038][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163038][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163038][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163038][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163038][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163038][INFO ][5d63ed0e11064][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"K9ZTC75089y37lvs_1566829837858","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"Plo","connector_id":"31","stream":"generic"}
+[20190826_163038][DEBUG][5d63ed0e11064][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63ed0e11368","_date":"20190826_163038","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Plo","encoding":"utf8"}}}
+[20190826_163038][DEBUG][5d63ed0e11064][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63ed0e11368","_date":"20190826_163038","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Plo","encoding":"utf8"}}}
+[20190826_163038][INFO ][5d63ed0e11064][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163110][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163110][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163110][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163110][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163110][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163110][INFO ][5d63ed2e7c27d][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163110][INFO ][5d63ed2e7c27d][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_163110][INFO ][5d63ed2e7c27d][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163212][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163212][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163212][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163212][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163212][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163212][INFO ][5d63ed6c1a137][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163212][INFO ][5d63ed6c1a137][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_163212][INFO ][5d63ed6c1a137][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163313][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163313][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163313][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163313][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163313][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163313][INFO ][5d63eda90e321][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163313][INFO ][5d63eda90e321][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_163313][INFO ][5d63eda90e321][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163413][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163413][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163413][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163413][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163413][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163413][INFO ][5d63ede5bec86][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163413][INFO ][5d63ede5bec86][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_163413][INFO ][5d63ede5bec86][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163514][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163514][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163514][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163514][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163514][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163514][INFO ][5d63ee227153d][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163514][INFO ][5d63ee227153d][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_163514][INFO ][5d63ee227153d][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_163514][DEBUG][5d63ee227153d][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha4s8jzsi6y3c","extid":"6JH21SpWjDC929fPSM8LN4YUea2xFhgPl2taIpzw0bGkg9iYa62Tsd_GsgmEm6dGH7kTXfTVv60JOf7d81roNw","type":"text","_date":"20190826_163509_720","extdate":1566830108271,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"Pli","encoding":"utf8"}}}
+[20190826_163514][INFO ][5d63ee227153d][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha4s8jzsi6y3c","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"Pli"}
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163523][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163523][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163523][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163523][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163523][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163523][INFO ][5d63ee2bb49b7][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"U4840XN46340V47X_1566830123515","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"Yes Man","connector_id":"31","stream":"generic"}
+[20190826_163523][DEBUG][5d63ee2bb49b7][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63ee2bb5062","_date":"20190826_163523","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Yes Man","encoding":"utf8"}}}
+[20190826_163523][DEBUG][5d63ee2bb49b7][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63ee2bb5062","_date":"20190826_163523","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Yes Man","encoding":"utf8"}}}
+[20190826_163523][INFO ][5d63ee2bb49b7][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163615][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163615][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163615][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163615][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163615][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163615][INFO ][5d63ee5f48faf][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163636][WARNG][5d63ee5f48faf][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_163636][INFO ][5d63ee5f48faf][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163737][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163737][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163737][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163737][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163737][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163737][INFO ][5d63eeb117257][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163758][WARNG][5d63eeb117257][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_163758][INFO ][5d63eeb117257][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_163858][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_163858][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_163858][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_163858][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_163858][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_163858][INFO ][5d63ef02e1a4e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_163920][WARNG][5d63ef02e1a4e][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_163920][INFO ][5d63ef02e1a4e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164020][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164020][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164020][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164020][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164020][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164020][INFO ][5d63ef54e1b16][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164034][WARNG][5d63ef54e1b16][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164034][INFO ][5d63ef54e1b16][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164135][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164135][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164135][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164135][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164135][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164135][INFO ][5d63ef9f668fb][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164156][WARNG][5d63ef9f668fb][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164156][INFO ][5d63ef9f668fb][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164257][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164257][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164257][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164257][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164257][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164257][INFO ][5d63eff1e0379][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164319][WARNG][5d63eff1e0379][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164319][INFO ][5d63eff1e0379][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164419][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164419][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164419][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164419][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164419][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164419][INFO ][5d63f043cffac][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164441][WARNG][5d63f043cffac][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164441][INFO ][5d63f043cffac][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164541][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164541][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164541][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164541][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164541][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164541][INFO ][5d63f0959ab60][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164602][WARNG][5d63f0959ab60][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164602][INFO ][5d63f0959ab60][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164703][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164703][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164703][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164703][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164703][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164703][INFO ][5d63f0e7e628b][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164725][WARNG][5d63f0e7e628b][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164725][INFO ][5d63f0e7e628b][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164825][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164825][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164825][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164825][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164825][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164825][INFO ][5d63f139b2df6][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_164846][WARNG][5d63f139b2df6][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_164846][INFO ][5d63f139b2df6][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_164947][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_164947][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_164947][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_164947][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_164947][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_164947][INFO ][5d63f18b7883e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165008][WARNG][5d63f18b7883e][MessagingManager::readMessages                    ] Read message(s) issue : ''
+[20190826_165008][INFO ][5d63f18b7883e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165109][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165109][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165109][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165109][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165109][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165109][INFO ][5d63f1dd585b3][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165130][WARNG][5d63f1dd585b3][MessagingManager::readMessages                    ] Read message(s) issue : code=0, comment=''
+[20190826_165130][INFO ][5d63f1dd585b3][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165231][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165231][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165231][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165231][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165231][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165231][INFO ][5d63f22f2218f][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165252][WARNG][5d63f22f2218f][MessagingManager::readMessages                    ] Read message(s) issue : code=0, comment=''
+[20190826_165252][INFO ][5d63f22f2218f][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165352][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165352][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165352][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165352][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165352][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165352][INFO ][5d63f280e942c][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165414][WARNG][5d63f280e942c][MessagingManager::readMessages                    ] Read message(s) issue : comment=''
+[20190826_165414][INFO ][5d63f280e942c][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165514][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165514][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165514][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165514][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165514][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165514][INFO ][5d63f2d2c154e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165536][WARNG][5d63f2d2c154e][MessagingManager::readMessages                    ] Read message(s) issue : comment=''
+[20190826_165536][INFO ][5d63f2d2c154e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165636][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165636][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165636][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165636][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165636][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165636][INFO ][5d63f32486df4][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165657][WARNG][5d63f32486df4][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_165657][INFO ][5d63f32486df4][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165758][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165758][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165758][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165758][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165758][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165758][INFO ][5d63f3766385a][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165819][WARNG][5d63f3766385a][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_165819][INFO ][5d63f3766385a][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_165920][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_165920][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_165920][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_165920][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_165920][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_165920][INFO ][5d63f3c837208][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_165941][WARNG][5d63f3c837208][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_165941][INFO ][5d63f3c837208][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170042][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170042][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170042][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170042][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170042][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170042][INFO ][5d63f41a3d09e][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170103][WARNG][5d63f41a3d09e][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_170103][INFO ][5d63f41a3d09e][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170204][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170204][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170204][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170204][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170204][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170204][INFO ][5d63f46c22481][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170211][WARNG][5d63f46c22481][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_170211][INFO ][5d63f46c22481][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170312][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170312][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170312][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170312][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170312][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170312][INFO ][5d63f4b0207bb][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170333][WARNG][5d63f4b0207bb][MessagingManager::readMessages                    ] Read message(s) issue : unable to establish connection with the Node Server...
+[20190826_170333][INFO ][5d63f4b0207bb][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170434][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170434][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170434][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170434][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170434][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170434][INFO ][5d63f5020b7c9][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170449][INFO ][5d63f5020b7c9][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_170449][INFO ][5d63f5020b7c9][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_170449][DEBUG][5d63f5020b7c9][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsj90my","extid":"8l_qQyNCqC6ikjFWztqkVIYUea2xFhgPl2taIpzw0bE3ZA-dzfClzfVtDh09KAL13cGLq5V92I_jXWY-geIQuA","type":"text","_date":"20190826_170445_946","extdate":1566831862136,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"plez","encoding":"utf8"}}}
+[20190826_170449][INFO ][5d63f5020b7c9][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566831862136
+[20190826_170449][INFO ][5d63f5020b7c9][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsj90my","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"plez"}
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170549][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170549][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170549][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170549][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170549][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170549][INFO ][5d63f54de0cb4][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170550][INFO ][5d63f54de0cb4][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_170550][INFO ][5d63f54de0cb4][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170650][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170650][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170650][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170650][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170650][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170650][INFO ][5d63f58aaa684][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170650][INFO ][5d63f58aaa684][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_170650][INFO ][5d63f58aaa684][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_170650][DEBUG][5d63f58aaa684][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjbdfy","extid":"zRsPIRqUA1cABLowC9-O_IYUea2xFhgPl2taIpzw0bHcAFJrpUlD4Ss3AclJnXKI7ucorVAB9OnDs8MS7Z-J7A","type":"text","_date":"20190826_170635_854","extdate":1566831994574,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdcsd","encoding":"utf8"}}}
+[20190826_170650][INFO ][5d63f58aaa684][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566831994574
+[20190826_170650][INFO ][5d63f58aaa684][MessageMapper::mapMessage                         ] !!!!!!!!!!! INT DATE = Sat, 05 Dec 51620 14:36:14 +0100
+[20190826_170650][INFO ][5d63f58aaa684][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjbdfy","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"csdcsd"}
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170751][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170751][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170751][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170751][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170751][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170751][INFO ][5d63f5c799751][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170751][INFO ][5d63f5c799751][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_170751][INFO ][5d63f5c799751][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170852][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170852][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170852][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170852][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170852][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170852][INFO ][5d63f60471176][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170852][INFO ][5d63f60471176][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_170852][INFO ][5d63f60471176][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_170852][DEBUG][5d63f60471176][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjdbmw","extid":"HkJijAXzX3M4DqcxDwXr9YYUea2xFhgPl2taIpzw0bG1ErtNACTK_Zw8JQcvyvfgr2urzItS_hBxNP8Emn619w","type":"text","_date":"20190826_170806_824","extdate":1566832085472,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdc","encoding":"utf8"}}}
+[20190826_170852][INFO ][5d63f60471176][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832085472
+[20190826_170852][INFO ][5d63f60471176][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832132
+[20190826_170852][INFO ][5d63f60471176][MessageMapper::mapMessage                         ] !!!!!!!!!!! INT DATE = Sun, 06 Dec 51620 15:51:12 +0100
+[20190826_170852][INFO ][5d63f60471176][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjdbmw","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"csdc"}
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_170953][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_170953][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_170953][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_170953][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_170953][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_170953][INFO ][5d63f641476bd][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_170953][INFO ][5d63f641476bd][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_170953][INFO ][5d63f641476bd][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_170953][DEBUG][5d63f641476bd][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjfacv","extid":"NFd1OF9sL8Y8L6moN5EDFoYUea2xFhgPl2taIpzw0bF2J2C3ARCgh5Dz1mMUB-JlVoRHRs_yVnVLRv2IeMcgCw","type":"text","_date":"20190826_170938_479","extdate":1566832176988,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"chiche","encoding":"utf8"}}}
+[20190826_170953][INFO ][5d63f641476bd][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832176988
+[20190826_170953][INFO ][5d63f641476bd][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832193
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171054][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171054][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171054][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171054][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171054][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171054][INFO ][5d63f67e08752][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171054][INFO ][5d63f67e08752][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_171054][INFO ][5d63f67e08752][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_171054][DEBUG][5d63f67e08752][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjgdde","extid":"PxYtToD8gifbtiah-Mh3-4YUea2xFhgPl2taIpzw0bHivJdFK40nf37kdP2Pv8lkg3ZazInKyuZTcpeZFwwwmw","type":"text","_date":"20190826_171029_042","extdate":1566832227345,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdcsdcv","encoding":"utf8"}}}
+[20190826_171054][INFO ][5d63f67e08752][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832227345
+[20190826_171054][INFO ][5d63f67e08752][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832254
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171154][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171154][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171154][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171154][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171154][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171154][INFO ][5d63f6bab4b47][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171154][INFO ][5d63f6bab4b47][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_171154][INFO ][5d63f6bab4b47][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171255][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171255][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171255][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171255][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171255][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171255][INFO ][5d63f6f777026][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171255][INFO ][5d63f6f777026][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_171255][INFO ][5d63f6f777026][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_171255][DEBUG][5d63f6f777026][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjjbe8","extid":"zCvtlX1Y05pm8dGYg1lYrIYUea2xFhgPl2taIpzw0bFsnbeOcLRV9cjB5a0OjpN4yytKyjJfcdfpEYhTu2QPdw","type":"text","_date":"20190826_171246_448","extdate":1566832364896,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdcsdcvsbvfd","encoding":"utf8"}}}
+[20190826_171255][INFO ][5d63f6f777026][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832364896
+[20190826_171255][INFO ][5d63f6f777026][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832375
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171357][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171357][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171357][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171357][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171357][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171357][INFO ][5d63f735150b7][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171357][INFO ][5d63f735150b7][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_171357][INFO ][5d63f735150b7][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_171357][DEBUG][5d63f735150b7][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjk746","extid":"bVRMkRs2uC8GUr7lkCyNHIYUea2xFhgPl2taIpzw0bHxtq_M-sZmjvbX5ZXkAyeydhChGRF50p7_80uIUyuaeA","type":"text","_date":"20190826_171327_558","extdate":1566832406471,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdcsdcscsdcdssdc","encoding":"utf8"}}}
+[20190826_171357][INFO ][5d63f735150b7][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832406471
+[20190826_171357][INFO ][5d63f735150b7][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832437
+[20190826_171357][INFO ][5d63f735150b7][MessageMapper::mapMessage                         ] !!!!!!!!!!! INT DATE = Thu, 10 Dec 51620 09:01:11 +0100
+[20190826_171357][INFO ][5d63f735150b7][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjk746","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"csdcsdcscsdcdssdc"}
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171457][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171457][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171457][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171457][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171457][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171458][INFO ][5d63f7720096a][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171458][INFO ][5d63f7720096a][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_171458][INFO ][5d63f7720096a][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_171458][DEBUG][5d63f7720096a][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjldm5","extid":"aap6M1hFSZlwEdDjLhkX5YYUea2xFhgPl2taIpzw0bE8bnlM76IXHJOwQPCHf5cBRznHr2NNz4bvvLTvnacvwQ","type":"text","_date":"20190826_171422_637","extdate":1566832461508,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"dsv","encoding":"utf8"}}}
+[20190826_171458][INFO ][5d63f7720096a][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832461508
+[20190826_171458][INFO ][5d63f7720096a][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832498
+[20190826_171458][INFO ][5d63f7720096a][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW TYPE = integer
+[20190826_171458][INFO ][5d63f7720096a][MessageMapper::mapMessage                         ] !!!!!!!!!!! INT DATE = Fri, 11 Dec 51620 00:18:28 +0100
+[20190826_171458][INFO ][5d63f7720096a][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjldm5","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"dsv"}
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171558][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171558][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171558][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171558][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171558][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171558][INFO ][5d63f7aec697d][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171558][INFO ][5d63f7aec697d][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_171558][INFO ][5d63f7aec697d][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171659][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171659][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171659][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171659][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171659][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171659][INFO ][5d63f7eb988b8][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171659][INFO ][5d63f7eb988b8][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_171659][INFO ][5d63f7eb988b8][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171800][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171800][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171800][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171800][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171800][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171800][INFO ][5d63f8288d0f8][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171800][INFO ][5d63f8288d0f8][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_171800][INFO ][5d63f8288d0f8][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_171901][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_171901][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_171901][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_171901][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_171901][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_171901][INFO ][5d63f8656368f][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_171901][INFO ][5d63f8656368f][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_171901][INFO ][5d63f8656368f][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172002][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172002][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172002][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172002][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172002][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172002][INFO ][5d63f8a21da22][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_172002][INFO ][5d63f8a21da22][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_172002][INFO ][5d63f8a21da22][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172038][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172038][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172038][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172038][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172038][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172038][INFO ][5d63f8c69f511][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"q3AY07q9q932888G_1566832838393","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"csdcsd","connector_id":"31","stream":"generic"}
+[20190826_172038][DEBUG][5d63f8c69f511][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63f8c69fbfc","_date":"20190826_172038","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"csdcsd","encoding":"utf8"}}}
+[20190826_172038][DEBUG][5d63f8c69f511][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63f8c69fbfc","_date":"20190826_172038","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"csdcsd","encoding":"utf8"}}}
+[20190826_172038][INFO ][5d63f8c69f511][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172102][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172102][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172102][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172102][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172102][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172102][INFO ][5d63f8dee62f2][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_172103][INFO ][5d63f8dee62f2][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_172103][INFO ][5d63f8dee62f2][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_172103][DEBUG][5d63f8dee62f2][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjt106","extid":"HkL3BJn46KThvg0RNfQHloYUea2xFhgPl2taIpzw0bGwW7pXG7MN1tOHvIHjeqlYP3cbwKIRw9e5NGbLgbx4xw","type":"text","_date":"20190826_172019_542","extdate":1566832818131,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"csdcs","encoding":"utf8"}}}
+[20190826_172103][INFO ][5d63f8dee62f2][MessageMapper::mapMessage                         ] !!!!!!!!!!! EXT DATE = 1566832818131
+[20190826_172103][INFO ][5d63f8dee62f2][MessageMapper::mapMessage                         ] !!!!!!!!!!! NOW DATE = 1566832863
+[20190826_172103][INFO ][5d63f8dee62f2][MessageMapper::mapMessage                         ] !!!!!!!!!!! INT DATE = Mon, 26 Aug 2019 17:20:18 +0200
+[20190826_172103][INFO ][5d63f8dee62f2][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjt106","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"csdcs"}
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172203][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172203][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172203][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172203][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172203][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172203][INFO ][5d63f91bda7d5][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_172204][INFO ][5d63f91bda7d5][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_172204][INFO ][5d63f91bda7d5][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_172204][DEBUG][5d63f91bda7d5][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjuyqk","extid":"g454UaJi727DIGoRHN0St4YUea2xFhgPl2taIpzw0bFAqW130hG4KsWbH3lD7acdv-tru5yOppUg92PoVniStA","type":"text","_date":"20190826_172149_916","extdate":1566832908510,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"Chiche...","encoding":"utf8"}}}
+[20190826_172204][INFO ][5d63f91bda7d5][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjuyqk","createdAt":"Mon, 26 Aug 2019 17:21:48 +0200","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"Chiche..."}
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172215][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172215][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172215][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172215][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172215][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172215][INFO ][5d63f9279a549][KConnectorPushFacebook::send                      ] Sending message : {"to":{"id":"2764676053605309","name":"Sebastien Kiamo"},"reference":"NCE5rOJ4H7pyvGjx_1566832935402","status":"sending","task_ref":102986,"from":{"name":"Remi","agent_id":1},"content":"Ca marche...","connector_id":"31","stream":"generic"}
+[20190826_172215][DEBUG][5d63f9279a549][MessagingManager::sendMessage                     ] Sending message : {"desc":{"_id":"5d63f9279a9b7","_date":"20190826_172215","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Ca marche...","encoding":"utf8"}}}
+[20190826_172215][DEBUG][5d63f9279a549][MessagingManager::sendMessage                     ] ==> message sent : {"desc":{"_id":"5d63f9279a9b7","_date":"20190826_172215","way":"out"},"emitter":{"extid":"387887055299080","name":"Kiamosinc01"},"recipients":[{"extid":"2764676053605309"}],"content":{"txt":{"txt":"Ca marche...","encoding":"utf8"}}}
+[20190826_172215][INFO ][5d63f9279a549][KConnectorPushFacebook::send                      ] ==> message sent : OK
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172304][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172304][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172304][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172304][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172304][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172304][INFO ][5d63f958baa54][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_172304][INFO ][5d63f958baa54][MessagingManager::readMessages                    ] Read message(s) : 1 results
+[20190826_172304][INFO ][5d63f958baa54][KConnectorPushFacebook::fetch                     ] Fetched 1 message(s)
+[20190826_172304][DEBUG][5d63f958baa54][KConnectorPushFacebook::mapMessages               ] ==> New message : {"desc":{"_id":"z2ha5uojzsjvpp1","extid":"-ZMtxpxwVLxs09kbnB6KC4YUea2xFhgPl2taIpzw0bGIEZFmhClFCOs6QLy4W0nMLqkDT1Opc6pP_GnZvbqkEg","type":"text","_date":"20190826_172224_853","extdate":1566832943310,"way":"inp"},"emitter":{"extid":"2764676053605309","name":"Sebastien Kiamo"},"recipients":[{"extid":"387887055299080"}],"content":{"txt":{"txt":"Cool !","encoding":"utf8"}}}
+[20190826_172304][INFO ][5d63f958baa54][KConnectorPushFacebook::mapMessages               ] => adding message : {"id":"z2ha5uojzsjvpp1","createdAt":"Mon, 26 Aug 2019 17:22:23 +0200","senderId":"2764676053605309","senderName":"Sebastien Kiamo","content":"Cool !"}
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] ------------------------------------------------------------------------------
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] Service : Facebook Push Webhook Connector
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] Version : sample
+[20190826_172405][INFO ][             ][MessagingManager::initRuntimeData                 ] Name    : Kiamosinc01
+[20190826_172405][INFOP][             ][MessagingManager::initAccessData                  ] Push Server URL : https://openkiamo.conecteo.fr:443
+[20190826_172405][INFO ][             ][MessagingManager::__construct                     ] INIT : OK
+[20190826_172405][INFO ][             ][MessageMapper::__construct                        ] INIT : OK
+[20190826_172405][INFO ][             ][KConnectorPushFacebook::__construct               ] INIT : OK
+[20190826_172405][INFO ][5d63f9958c8c2][KConnectorPushFacebook::fetch                     ] Fetching message(s)
+[20190826_172405][INFO ][5d63f9958c8c2][MessagingManager::readMessages                    ] Read message(s) : 0 results
+[20190826_172405][INFO ][5d63f9958c8c2][KConnectorPushFacebook::fetch                     ] Fetched 0 message(s)
