@@ -96,27 +96,67 @@ class Webs
   const REST_REQUEST_RESULT   = 3 ;
   
   // Result : [ okFlag, curl_error, http_code, jsonResponse ]
-  public static function restRequest( $url, $data = null, $header = null )
+  public static function restRequest( $url, $data = null, $header = null, $authData = null, $verbose = false )
   {
     // Init
     $ch = curl_init();
     curl_setopt( $ch, CURLOPT_URL, $url ) ;
+    
+    // Verbose
+    if( $verbose === true )
+    {
+      curl_setopt( $ch, CURLOPT_VERBOSE, true ) ;
+    }
 
     // POST Data (otherwise, GET)
     if( !empty( $data ) )
     {
-      $dataString = http_build_query( $data ) ;
+      $dataStr = $data ;
+      if( is_array( $data ) ) $dataStr = http_build_query( $data ) ;
       curl_setopt( $ch, CURLOPT_POST        , true        ) ;
-      curl_setopt( $ch, CURLOPT_POSTFIELDS  , $dataString ) ;
+      curl_setopt( $ch, CURLOPT_POSTFIELDS  , $dataStr ) ;
     }
     
     // Header
     if( !empty( $header ) )
     {
-      curl_setopt( $ch, CURLOPT_HTTPHEADER  , $header     ) ;
+      $_header = [] ;
+      if( is_string( $header ) )
+      {
+        $_header[] = $header ;
+      }
+      else  // It's an array
+      {
+        foreach( $header as $k => $v )
+        {
+          if( is_int( $k ) )
+          {
+            $_header[] = $v ;
+          }
+          else  // It's a string
+          {
+            $_header[] = $k . ': ' . $v ;
+          }
+        }
+      }
+      curl_setopt( $ch, CURLOPT_HTTPHEADER  , $_header ) ;
     }
 
-    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true        ) ; 
+    // Authent Data
+    if( !empty( $authData ) )
+    {
+      if( array_key_exists( 'httpAuth', $authData ) )
+      {
+        curl_setopt( $ch, CURLOPT_HTTPAUTH, $authData[ 'httpAuth' ] ) ;
+      }
+      if(    array_key_exists( 'username', $authData )
+          && array_key_exists( 'password', $authData ) )
+      {
+        curl_setopt( $ch, CURLOPT_USERPWD, $authData[ 'username' ] . ':' . $authData[ 'password' ] ) ;
+      }
+    }
+
+    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true ) ; 
 
     // Call
     $result = curl_exec( $ch ) ;

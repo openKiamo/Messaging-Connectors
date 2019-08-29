@@ -8,6 +8,7 @@ require_once( __DIR__ . DIRECTORY_SEPARATOR . 'confManager.php' ) ;
 require_once( __DIR__ . DIRECTORY_SEPARATOR . 'logger.php'      ) ;
 
 use KiamoConnectorSampleToolsBasic\Dict        ;
+use KiamoConnectorSampleToolsBasic\Files       ;
 use KiamoConnectorSampleToolsBasic\ConfManager ;
 use KiamoConnectorSampleToolsBasic\Logger      ;
 
@@ -21,6 +22,7 @@ class Module
   const ConfManagerDefaultFolder = 'conf'        ;
   const LoggerTool               = 'Logger'      ;
   const LoggerDefaultFolder      = 'logs'        ;
+  const ResourcesDefaultFolder   = 'data'        ;
 
   const Instance                 = 'Instance'    ;
   const Folder                   = 'Folder'      ;
@@ -32,6 +34,9 @@ class Module
     if( empty( $this->_rootPath ) ) $this->_rootPath = __DIR__ . DIRECTORY_SEPARATOR . '..' ;
     $this->_logsPath          = $_logsPath ;
     if( empty( $this->_logsPath ) ) $this->_logsPath = $this->_rootPath . DIRECTORY_SEPARATOR . self::LoggerDefaultFolder ;
+    if( !Files::existsFile( $this->_logsPath ) ) mkdir( $this->_logsPath ) ;
+    $this->_dataPath          = $this->_rootPath . DIRECTORY_SEPARATOR . self::ResourcesDefaultFolder ;
+    if( !Files::existsFile( $this->_dataPath ) ) mkdir( $this->_dataPath ) ;
     $this->_confPath          = $_confPath ;
     if( empty( $this->_confPath ) ) $this->_confPath = $this->_rootPath . DIRECTORY_SEPARATOR . self::ConfManagerDefaultFolder ;
     $this->elements           =         [] ;
