@@ -4,9 +4,9 @@
 
 
 
-| Date    | 20190722  |
+| Date    | 20190829  |
 | :------ | --------- |
-| Version | v1.0.0    |
+| Version | v1.1.0    |
 | Author  | S.Iniesta |
 
 
@@ -76,6 +76,7 @@ The purpose of the toolkit is to provide to such package a common structure, too
 The common structure is based on a folder where the main class files will be dropped, and composed of the following sub-folders :
 
 * conf 	: configuration files
+* core     : main connector's modules
 * data 	: resources root folder
 * logs 	: logs root folder
 * tools	: tools source files

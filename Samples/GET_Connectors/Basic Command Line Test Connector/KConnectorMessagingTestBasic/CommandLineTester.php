@@ -13,8 +13,8 @@ use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
 
 // Messaging Connector Toolkit
 // ---
-require_once __DIR__ . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . "core"  . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
 use KiamoConnectorSampleToolsBasic\Datetimes ;
 use KiamoConnectorSampleToolsBasic\Logger    ;

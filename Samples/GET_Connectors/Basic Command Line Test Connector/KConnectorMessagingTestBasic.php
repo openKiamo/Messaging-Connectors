@@ -16,7 +16,7 @@ use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
 // Messaging Connector Toolkit
 // ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
-require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic" . DIRECTORY_SEPARATOR . "core"  . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
 
 use KiamoConnectorSampleToolsBasic\Logger ;
 use KiamoConnectorSampleToolsBasic\Module ;

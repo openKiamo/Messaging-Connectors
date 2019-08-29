@@ -3,7 +3,7 @@
 namespace UserFiles\Messaging\Connector\KConnectorMessagingOrangeSMS ;
 
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
+require_once __DIR__ . DIRECTORY_SEPARATOR . "../tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 
 
 use KiamoConnectorSampleToolsOrangeSMS\Datetimes ;
@@ -31,24 +31,24 @@ class MessagingManager extends SubModule
 
   public   function initRuntimeData()
   {
-    $this->selfSender                = $this->getConf( "self.sender"                                        ) ;
-    $this->smsPrefixKeyword          = $this->getConf( "self.smsPrefixKeyword"                        ) . ' ' ;
-    $this->messagesLimit             = $this->getConf( "runtime.pagination.limitPerRequestMessages"         ) ;
+    $this->selfSender                = $this->getConf( "self.sender"                                      ) ;
+    $this->smsPrefixKeyword          = $this->getConf( "self.smsPrefixKeyword"                            ) . ' ' ;
+    $this->messagesLimit             = $this->getConf( "runtime.pagination.limitPerRequestMessages"       ) ;
 
-    $this->inDateFormat              = $this->getConf( "runtime.datetimes.inFormat"                         ) ;
-    $this->outDateFormat             = $this->getConf( "runtime.datetimes.outFormat"                        ) ;
-    $this->timestampFormat           = Datetimes::cleanDateTimeFormat( $this->outDateFormat                          ) ;
-    $this->outTimezone               = $this->getConf( "runtime.datetimes.outTimezone"                      ) ;
+    $this->inDateFormat              = $this->getConf( "runtime.datetimes.inFormat"                       ) ;
+    $this->outDateFormat             = $this->getConf( "runtime.datetimes.outFormat"                      ) ;
+    $this->timestampFormat           = Datetimes::cleanDateTimeFormat( $this->outDateFormat               ) ;
+    $this->outTimezone               = $this->getConf( "runtime.datetimes.outTimezone"                    ) ;
 
-    $this->outEncoding               = $this->getConf( "runtime.encodings.outEncoding"                      ) ;
+    $this->outEncoding               = $this->getConf( "runtime.encodings.outEncoding"                    ) ;
 
-    $this->customerCacheEnabled      = $this->getConf( 'runtime.resources.customerCache.enabled'            ) ;
-    $this->customerCacheCheck        = $this->getConf( 'runtime.resources.customerCache.checkEveryInSecs'   ) ;
-    $this->customerCacheExpiration   = $this->getConf( 'runtime.resources.customerCache.expirationInSecs'   ) ;
+    $this->customerCacheEnabled      = $this->getConf( 'runtime.resources.customerCache.enabled'          ) ;
+    $this->customerCacheCheck        = $this->getConf( 'runtime.resources.customerCache.checkEveryInSecs' ) ;
+    $this->customerCacheExpiration   = $this->getConf( 'runtime.resources.customerCache.expirationInSecs' ) ;
 
-    $this->cursorsEnabled            = $this->getConf( 'runtime.resources.cursors.enabled'                  ) ;
-    $this->customersEnabled          = $this->getConf( 'runtime.resources.customers.enabled'                ) ;
-    $this->conversationsEnabled      = $this->getConf( 'runtime.resources.conversations.enabled'            ) ;
+    $this->cursorsEnabled            = $this->getConf( 'runtime.resources.cursors.enabled'                ) ;
+    $this->customersEnabled          = $this->getConf( 'runtime.resources.customers.enabled'              ) ;
+    $this->conversationsEnabled      = $this->getConf( 'runtime.resources.conversations.enabled'          ) ;
   }
 
   private  function initAccessData()

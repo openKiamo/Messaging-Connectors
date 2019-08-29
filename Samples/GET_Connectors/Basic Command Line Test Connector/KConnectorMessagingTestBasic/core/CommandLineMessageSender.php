@@ -3,8 +3,8 @@
 namespace UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
 
 
+require_once __DIR__ . DIRECTORY_SEPARATOR . "../tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 require_once __DIR__ . DIRECTORY_SEPARATOR . "MessagingManager.php" ;
-require_once __DIR__ . DIRECTORY_SEPARATOR . "tools" . DIRECTORY_SEPARATOR . "autoload.php" ;
 
 
 use KiamoConnectorSampleToolsBasic\Datetimes ;
