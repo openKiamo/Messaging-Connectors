@@ -3,12 +3,29 @@
 namespace UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
 
 
-// Kiamo Messaging Connector Utilities
+/**/
+// Kiamo v6.x : Messaging Utilities
+// -----
+
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+/**/
+
+
+/*
+// Kiamo v7.x : Messaging Utilities
+// -----
+
+use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
+use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
+*/
+
+
+// Kiamo Messaging Connector
 // ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "KConnectorMessagingTestBasic.php" ;
 
 use UserFiles\Messaging\Connector\KConnectorMessagingTestBasic ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
 
 
 // Messaging Connector Toolkit

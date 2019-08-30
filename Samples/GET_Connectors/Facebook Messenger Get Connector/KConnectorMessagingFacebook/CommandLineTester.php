@@ -3,12 +3,29 @@
 namespace UserFiles\Messaging\Connector\KConnectorMessagingFacebook ;
 
 
-// Kiamo Messaging Connector Utilities
+/**/
+// Kiamo v6.x : Messaging Utilities
+// -----
+
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
+/**/
+
+
+/*
+// Kiamo v7.x : Messaging Utilities
+// -----
+
+use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
+use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
+*/
+
+
+// Kiamo Messaging Connector
 // ---
 require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "KConnectorMessagingFacebook.php" ;
 
 use UserFiles\Messaging\Connector\KConnectorMessagingFacebook ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
 
 
 // Messaging Connector Toolkit

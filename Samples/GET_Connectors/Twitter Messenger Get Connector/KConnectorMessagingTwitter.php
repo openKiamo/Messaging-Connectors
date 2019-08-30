@@ -2,15 +2,38 @@
 namespace UserFiles\Messaging\Connector ;
 
 
-// Kiamo Messaging Connector Utilities
-// ---
-define( 'KIAMO_MESSAGING_UTILITY', '../../../../../www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging' ) ;
+/**/
+// Kiamo v6.x : Messaging Utilities
+// -----
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "ConnectorConfiguration.php"    ;
-require_once __DIR__ . DIRECTORY_SEPARATOR . KIAMO_MESSAGING_UTILITY . DIRECTORY_SEPARATOR . "GenericConnectorInterface.php" ;
+const KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
+const KIAMO_MESSAGING_UTILITY = KIAMO_ROOT . "www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging/" ;
 
+require_once KIAMO_MESSAGING_UTILITY . "ParameterBag.php"              ;
+require_once KIAMO_MESSAGING_UTILITY . "ConnectorConfiguration.php"    ;
+require_once KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface.php" ;
+
+use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
 use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
 use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
+/**/
+
+
+/*
+// Kiamo v7.x : Messaging Utilities
+// -----
+
+const KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
+const KIAMO_MESSAGING_UTILITY = KIAMO_ROOT . "www/Symfony/src/Kiamo/Admin/Utility/Messaging/" ;
+
+require_once KIAMO_MESSAGING_UTILITY . "ParameterBag.php"              ;
+require_once KIAMO_MESSAGING_UTILITY . "ConnectorConfiguration.php"    ;
+require_once KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface.php" ;
+
+use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
+use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
+use Kiamo\Admin\Utility\Messaging\GenericConnectorInterface ;
+*/
 
 
 // Messaging Connector Toolkit
