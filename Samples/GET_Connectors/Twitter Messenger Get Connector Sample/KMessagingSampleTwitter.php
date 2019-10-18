@@ -163,18 +163,6 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
     case "access" :
       $conf = &$this->accessConf ;
       break ;
-    case "entities" :
-      $conf = &$this->entityMappingConf ;
-      break ;
-    case "contact" :
-      $conf = &$this->contactConf ;
-      break ;
-    case "company" :
-      $conf = &$this->companyConf ;
-      break ;
-    case "ticket" :
-      $conf = &$this->ticketConf ;
-      break ;
     }
     return $conf == null ? null : $this->getInDict( $conf, $key ) ;
   }
