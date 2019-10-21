@@ -4,9 +4,9 @@
 
 
 
-| Date    | 20191008  |
+| Date    | 20191021  |
 | :------ | --------- |
-| Version | v1.1.0    |
+| Version | v1.2.0    |
 | Author  | S.Iniesta |
 
 
@@ -92,7 +92,7 @@ Those three steps are detailed bellow.
 
 Create a **[Twitter page](http://www.twitter.com)**.
 
-![Page Creation](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0101_CreatePage.png)
+![Page Creation](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0101_CreatePage.png)
 
 
 
@@ -101,12 +101,12 @@ Create a **[Twitter page](http://www.twitter.com)**.
 
 In order to receive customers' messages, you must enable direct messages from anyone :
 
-* on the left column, click on ![](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_More.png),
+* on the left column, click on ![](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_More.png),
 * on the left column, click on "**Settings and privacy**",
 * on the center column, click on "**Privacy and safety**",
 * on the right column, toggle on the "**Direct Messages**" => "Receive messages from anyone".
 
-![Direct Messages Setup](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0102_CreatePage.png)
+![Direct Messages Setup](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0102_CreatePage.png)
 
 
 
@@ -138,7 +138,7 @@ Create a Twitter application on your **[developer account](https://developers.Tw
 
 On the **Permissions** tab, enable the "**Read, write and Direct Messages**" option :
 
-![App Permissions](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0201_CreateApp.png)
+![App Permissions](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0201_CreateApp.png)
 
 
 
@@ -147,7 +147,7 @@ On the **Permissions** tab, enable the "**Read, write and Direct Messages**" opt
 
 On the **Keys and tokens** tag, generate the required keys and tokens :
 
-![App Keys and Tokens](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0202_CreateApp.png)
+![App Keys and Tokens](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0202_CreateApp.png)
 
 ***<u>Important</u>*** :  Note the `APIKey`, `APISecretKey`, `AccessToken` and `AccessTokenSecret`, they will be used to configure the connector.
 
@@ -163,7 +163,7 @@ Deploy your connector package on `<kiamoPath>/data/userfiles/class/Messaging/Con
 
 On the connector's implementation, edit your dedicated configuration (function `initConfig()` ) and set the application credentials :
 
-![Connector Configuration](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0301_ConnectorConfiguration.png)
+![Connector Configuration](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0301_ConnectorConfiguration.png)
 
 **<u>Note</u>** : at this stage, you won't be able to fill the `userId` field. The procedure to get it is described bellow.
 
@@ -185,11 +185,11 @@ There are several ways to get your own Twitter User Id :
 
     * enter your Twitter page name :
 
-      ![Command Line Tester : screen_name](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0401_GetUserId.png)
+      ![Command Line Tester : screen_name](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0401_GetUserId.png)
 
     * run the test #04 of the Command Line Tester on a Command Line Console :
 
-      ![Command Line Tester : run](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Messenger%20Get%20Connector%20Sample/TwitterRequirements/data/TW_0402_GetUserId.png)
+      ![Command Line Tester : run](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/GET_Connectors/Twitter%20Simple%20GET%20Connector%20Sample/TwitterRequirements/data/TW_0402_GetUserId.png)
 
   * or using the read messages API, through the test #03 :
 
