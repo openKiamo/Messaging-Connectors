@@ -1,7 +1,7 @@
 <?php
 namespace UserFiles\Messaging\Connector ;
 
-define( "CONNECTOR", "KMessagingSampleOrangeSMS" ) ;
+define( "ORSAMPLE_CONNECTOR", "KMessagingSampleOrangeSMS" ) ;
 
 
 /**/
@@ -147,7 +147,7 @@ class KMessagingSampleOrangeSMS implements GenericConnectorInterface
     $this->log( "Fetching message(s)", OrLogger::LOG_INFO, __METHOD__ ) ;
 
     $params              = $parameterBag->getParameters() ;
-    $lastReadMessageKey  = CONNECTOR . '.lastReadMessageDate' ;
+    $lastReadMessageKey  = ORSAMPLE_CONNECTOR . '.lastReadMessageDate' ;
     $lastReadMessageDate = '' ;
     if( array_key_exists( $lastReadMessageKey, $params ) ) $lastReadMessageDate = $params[ $lastReadMessageKey ] ;
     if( !empty( $lastReadMessageDate ) ) $this->log( "==> lastMessageDate=" . $lastReadMessageDate, OrLogger::LOG_DEBUG, __METHOD__ ) ;
@@ -1370,7 +1370,7 @@ class OrCommandLineTester
 
   public    function __construct()
   {
-    $connectorClass = "UserFiles\\Messaging\\Connector\\" . CONNECTOR ;
+    $connectorClass = "UserFiles\\Messaging\\Connector\\" . ORSAMPLE_CONNECTOR ;
     $this->connector = new $connectorClass( new ConnectorConfiguration ) ;
     $this->defineTestFunctions() ;
     if( $this->setTestId() ) $this->run() ;
@@ -1484,7 +1484,7 @@ class OrCommandLineTester
 
 
 // Enable command line test if ran by a command shell
-if( php_sapi_name() == 'cli' )
+if( php_sapi_name() == 'cli' && !empty( getopt( null, [ OrCommandLineTester::Verb . ":" ] ) ) )
 {
   // Usage example :
   // > php <ConnectorName>.php -f --test=00

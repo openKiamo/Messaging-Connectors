@@ -1,7 +1,7 @@
 <?php
 namespace UserFiles\Messaging\Connector ;
 
-define( "CONNECTOR", "KMessagingSampleFacebook" ) ;
+define( "FBSAMPLE_CONNECTOR", "KMessagingSampleFacebook" ) ;
 
 
 /**/
@@ -139,7 +139,7 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     $this->log( "Fetching message(s)", FbLogger::LOG_INFO, __METHOD__ ) ;
 
     $params             = $parameterBag->getParameters() ;
-    $lastReadMessageKey = CONNECTOR . '.lastReadMessageId' ;
+    $lastReadMessageKey = FBSAMPLE_CONNECTOR . '.lastReadMessageId' ;
     $lastReadMessageTs  = '' ;
     if( array_key_exists( $lastReadMessageKey, $params ) ) $lastReadMessageTs = $params[ $lastReadMessageKey ] ;
     if( !empty( $lastReadMessageTs ) ) $this->log( "==> lastMessageTs=" . $lastReadMessageTs, FbLogger::LOG_DEBUG, __METHOD__ ) ;
@@ -976,7 +976,7 @@ class FbCommandLineTester
 
   public    function __construct()
   {
-    $connectorClass = "UserFiles\\Messaging\\Connector\\" . CONNECTOR ;
+    $connectorClass = "UserFiles\\Messaging\\Connector\\" . FBSAMPLE_CONNECTOR ;
     
     $this->connector = new $connectorClass( new ConnectorConfiguration ) ;
     $this->defineTestFunctions() ;
@@ -1115,7 +1115,7 @@ class FbCommandLineTester
 
 
 // Enable command line test if ran by a command shell
-if( php_sapi_name() == 'cli' )
+if( php_sapi_name() == 'cli' && !empty( getopt( null, [ FbCommandLineTester::Verb . ":" ] ) ) )
 {
   // Usage example :
   // > php <ConnectorName>.php -f --test=00

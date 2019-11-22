@@ -1,7 +1,7 @@
 <?php
 namespace UserFiles\Messaging\Connector ;
 
-define( "CONNECTOR", "KMessagingSampleTwitter" ) ;
+define( "TWSAMPLE_CONNECTOR", "KMessagingSampleTwitter" ) ;
 
 
 /**/
@@ -174,7 +174,7 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
     $this->log( "Fetching message(s)", TwLogger::LOG_INFO, __METHOD__ ) ;
 
     $params             = $parameterBag->getParameters() ;
-    $lastReadMessageKey = CONNECTOR . '.lastReadMessageId' ;
+    $lastReadMessageKey = TWSAMPLE_CONNECTOR . '.lastReadMessageId' ;
     $lastReadMessageId  = '' ;
     if( array_key_exists( $lastReadMessageKey, $params ) ) $lastReadMessageId = $params[ $lastReadMessageKey ] ;
     if( !empty( $lastReadMessageId ) ) $this->log( "==> lastMessageId=" . $lastReadMessageId, TwLogger::LOG_DEBUG, __METHOD__ ) ;
@@ -1046,7 +1046,7 @@ class TwCommandLineTester
 
   public    function __construct()
   {
-    $connectorClass = "UserFiles\\Messaging\\Connector\\" . CONNECTOR ;
+    $connectorClass = "UserFiles\\Messaging\\Connector\\" . TWSAMPLE_CONNECTOR ;
     $this->connector = new $connectorClass( new ConnectorConfiguration ) ;
     $this->defineTestFunctions() ;
     if( $this->setTestId() ) $this->run() ;
@@ -1171,7 +1171,7 @@ class TwCommandLineTester
 
 
 // Enable command line test if ran by a command shell
-if( php_sapi_name() == 'cli' )
+if( php_sapi_name() == 'cli' && !empty( getopt( null, [ TwCommandLineTester::Verb . ":" ] ) ) )
 {
   // Usage example :
   // > php <ConnectorName>.php -f --test=00
