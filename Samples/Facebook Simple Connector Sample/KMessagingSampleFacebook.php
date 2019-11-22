@@ -134,6 +134,11 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     return $this->getConf( "self", "service" ) ;
   }
 
+  public function getIcon()
+  {
+    return null ;
+  }
+
   public function fetch( $parameterBag )
   {
     $this->log( "Fetching message(s)", FbLogger::LOG_INFO, __METHOD__ ) ;

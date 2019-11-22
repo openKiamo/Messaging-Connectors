@@ -32,6 +32,14 @@ class GenericConnectorExample implements GenericConnectorInterface
     }
 
     /**
+    * Retourne l'icone souhaitant être utilisée pour le connecteur, null pour icône par défaut
+    * @return string
+    */
+    public function getIcon() {
+      return null;
+    }
+
+    /**
      * Récupération des messages
      * @param \Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag $parameterBag
      * @return \Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag

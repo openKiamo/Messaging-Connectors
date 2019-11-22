@@ -142,6 +142,11 @@ class KMessagingSampleOrangeSMS implements GenericConnectorInterface
     return $this->getConf( "self", "service" ) ;
   }
 
+  public function getIcon()
+  {
+    return null ;
+  }
+
   public function fetch( $parameterBag )
   {
     $this->log( "Fetching message(s)", OrLogger::LOG_INFO, __METHOD__ ) ;
