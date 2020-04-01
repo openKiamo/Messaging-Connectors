@@ -4,27 +4,6 @@ namespace UserFiles\Messaging\Connector ;
 define( "FBSAMPLE_CONNECTOR", "KMessagingSampleFacebook" ) ;
 
 
-/**/
-// Kiamo v6.x : Messaging Utilities
-// -----
-
-const FACEBOOK_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
-const FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY = FACEBOOK_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging/" ;
-
-require_once FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY . "ParameterBag.php"              ;
-require_once FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY . "ConnectorConfiguration.php"    ;
-require_once FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface.php" ;
-
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
-/**/
-
-
-/*
-// Kiamo v7.x : Messaging Utilities
-// -----
-
 const FACEBOOK_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
 const FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY = FACEBOOK_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Admin/Utility/Messaging/" ;
 
@@ -35,7 +14,6 @@ require_once FACEBOOK_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInterfac
 use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
 use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
 use Kiamo\Admin\Utility\Messaging\GenericConnectorInterface ;
-*/
 
 
 use \DateTime, \DateTimeZone ;
@@ -129,17 +107,17 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     return $this->_classname ;
   }
   
-  public function getName()
+  public function getName() : string
   {
     return $this->getConf( "self", "service" ) ;
   }
 
-  public function getIcon()
+  public function getIcon() : ?string
   {
     return null ;
   }
 
-  public function fetch( $parameterBag )
+  public function fetch( $parameterBag ) : ParameterBag
   {
     $this->log( "Fetching message(s)", FbLogger::LOG_INFO, __METHOD__ ) ;
 
@@ -182,7 +160,7 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     return $parameterBag;
   }
 
-  public function send( array $messageTask )
+  public function send( array $messageTask ) : void
   {
     $this->log( "Sending message : " . json_encode( $messageTask ), FbLogger::LOG_INFO, __METHOD__ ) ;
 

@@ -4,27 +4,6 @@ namespace UserFiles\Messaging\Connector ;
 define( "CLSAMPLE_CONNECTOR", "KMessagingSampleCommandLine" ) ;
 
 
-/**/
-// Kiamo v6.x : Messaging Utilities
-// -----
-
-const COMMANDLINE_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
-const COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY = COMMANDLINE_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging/" ;
-
-require_once COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY . "ParameterBag.php"              ;
-require_once COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY . "ConnectorConfiguration.php"    ;
-require_once COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface.php" ;
-
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
-/**/
-
-
-/*
-// Kiamo v7.x : Messaging Utilities
-// -----
-
 const COMMANDLINE_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
 const COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY = COMMANDLINE_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Admin/Utility/Messaging/" ;
 
@@ -35,7 +14,6 @@ require_once COMMANDLINE_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInter
 use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
 use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
 use Kiamo\Admin\Utility\Messaging\GenericConnectorInterface ;
-*/
 
 
 use \DateTime, \DateTimeZone ;

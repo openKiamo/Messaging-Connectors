@@ -4,27 +4,6 @@ namespace UserFiles\Messaging\Connector ;
 define( "TWSAMPLE_CONNECTOR", "KMessagingSampleTwitter" ) ;
 
 
-/**/
-// Kiamo v6.x : Messaging Utilities
-// -----
-
-const TWITTER_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
-const TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY = TWITTER_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Bundle/AdminBundle/Utility/Messaging/" ;
-
-require_once TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY . "ParameterBag.php"              ;
-require_once TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY . "ConnectorConfiguration.php"    ;
-require_once TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface.php" ;
-
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ParameterBag              ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\ConnectorConfiguration    ;
-use Kiamo\Bundle\AdminBundle\Utility\Messaging\GenericConnectorInterface ;
-/**/
-
-
-/*
-// Kiamo v7.x : Messaging Utilities
-// -----
-
 const TWITTER_SAMPLE_KIAMO_ROOT              = __DIR__ . "/../../../../../" ;
 const TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY = TWITTER_SAMPLE_KIAMO_ROOT . "www/Symfony/src/Kiamo/Admin/Utility/Messaging/" ;
 
@@ -35,7 +14,6 @@ require_once TWITTER_SAMPLE_KIAMO_MESSAGING_UTILITY . "GenericConnectorInterface
 use Kiamo\Admin\Utility\Messaging\ParameterBag              ;
 use Kiamo\Admin\Utility\Messaging\ConnectorConfiguration    ;
 use Kiamo\Admin\Utility\Messaging\GenericConnectorInterface ;
-*/
 
 
 use \DateTime, \DateTimeZone ;
@@ -110,11 +88,11 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
         ],
       ],
       'credentials'                 => [
-        'userId'                       => '844229943160725504',                                   // selfId : get it by sending a direct message to yourself and call $this->connector->_msgManager->twitterRequest( 'messageList' ) in the CommandLineTester
-        'consumerKey'                  => 'Ckf6JwZYZjyKgviO4tH33GyXy',                            // apiKey
-        'consumerSecret'               => 'P8mmLQWtAd66UZHxnNvQXROYhXtfNsUC18DYN6uFsIbwerECQz',   // apiSecretKey
-        'oauthToken'                   => '844229943160725504-MmGcZkoQRbCMbV34Ld7DXT9dzkNRJnz',   // accessToken
-        'oauthTokenSecret'             => 'XSYiH3ZoK0dV9hHTwTLRKDUiGUpmTm8vi2vm2cszuty01',        // accessSecretToken
+        'userId'                       => 'xxxxxxxxxxxxxxxxxx',                                   // selfId : get it by sending a direct message to yourself and call $this->connector->_msgManager->twitterRequest( 'messageList' ) in the CommandLineTester
+        'consumerKey'                  => 'xxxxxxxxxxxxxxxxxxxxxxxxx',                            // apiKey
+        'consumerSecret'               => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',   // apiSecretKey
+        'oauthToken'                   => 'xxxxxxxxxxxxxxxxxx-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',   // accessToken
+        'oauthTokenSecret'             => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',        // accessSecretToken
       ],
       'oauthData'                   => [
         'version'                      => '1.0',
@@ -164,17 +142,17 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
     return $this->_classname ;
   }
   
-  public function getName()
+  public function getName() : string
   {
     return $this->getConf( "self", "service" ) ;
   }
 
-  public function getIcon()
+  public function getIcon() : ?string
   {
     return null ;
   }
 
-  public function fetch( $parameterBag )
+  public function fetch( $parameterBag ) : ParameterBag
   {
     $this->log( "Fetching message(s)", TwLogger::LOG_INFO, __METHOD__ ) ;
 
@@ -218,7 +196,7 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
     return $parameterBag;
   }
 
-  public function send( array $messageTask )
+  public function send( array $messageTask ) : void
   {
     $this->log( "Sending message : " . json_encode( $messageTask ), TwLogger::LOG_INFO, __METHOD__ ) ;
 
