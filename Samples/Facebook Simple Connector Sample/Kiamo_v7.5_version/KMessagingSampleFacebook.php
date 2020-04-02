@@ -112,7 +112,7 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     return $this->getConf( "self", "service" ) ;
   }
 
-  public function getIcon() : ?string
+  public static function getIcon() : ?string
   {
     return null ;
   }
