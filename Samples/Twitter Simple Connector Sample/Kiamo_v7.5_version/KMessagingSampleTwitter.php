@@ -462,6 +462,13 @@ class TwMessagingManager
     {
       $this->log( "Unable to recover data for user id=" . $userId, TwLogger::LOG_WARN, __METHOD__ ) ;
     }
+    else
+    {
+      $userRecord[ 'name'   ] = $userData[ 'name'        ] ;
+      $userRecord[ 'screen' ] = $userData[ 'screen_name' ] ;
+      $userRecord[ 'key'    ] = $userData[ 'name'        ] . '@' . $userData[ 'screen_name' ] ;
+    }
+    
     $this->log( "==> User : " . json_encode( $userRecord ), TwLogger::LOG_INFO, __METHOD__ ) ;
     return $userRecord ;
   }
