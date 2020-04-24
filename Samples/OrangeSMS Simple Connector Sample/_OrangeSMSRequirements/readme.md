@@ -98,5 +98,5 @@ Deploy your connector package on `<kiamoPath>/data/userfiles/class/Messaging/Con
 
 On the connector's implementation folder, edit your dedicated configuration file (`conf/u_<connectorName>.php`) and set the required credentials :
 
-![Connector Configuration](https://github.com/openKiamo/Messaging-Connectors/blob/master/Samples/OrangeSMS%20Simple%20Connector%20Sample/OrangeSMSRequirements/data/OrSMS_0301_ConnectorConfiguration.png)
+![Connector Configuration](https://github.com/openKiamo/Messaging-Connectors/raw/master/Samples/OrangeSMS%20Simple%20Connector%20Sample/_OrangeSMSRequirements/data/OrSMS_0301_ConnectorConfiguration.png)
 
