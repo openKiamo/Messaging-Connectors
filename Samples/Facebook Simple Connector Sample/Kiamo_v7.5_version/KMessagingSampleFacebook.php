@@ -140,11 +140,11 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
     {
       $this->log( "==> New message : " . json_encode( $msg ), FbLogger::LOG_TRACE, __METHOD__ ) ;
       $inputMsg = [
-        'id'         => $msg[ "id"       ],
-        'createdAt'  => $msg[ "date"     ],
-        'senderId'   => $msg[ "uuid"     ],
-        'senderName' => $msg[ "userName" ],
-        'content'    => $msg[ "message"  ],
+        'id'         => $msg[ "id"        ],
+        'createdAt'  => $msg[ "timestamp" ],
+        'senderId'   => $msg[ "uuid"      ],
+        'senderName' => $msg[ "userName"  ],
+        'content'    => $msg[ "message"   ],
       ] ;
 
       // Special case : history before connector
@@ -172,8 +172,6 @@ class KMessagingSampleFacebook implements GenericConnectorInterface
 
     $this->log( "Sending message to user id '" . $to . "', conversationId='" . $conversationId . "' : '" . $msg . "'", FbLogger::LOG_INFO, __METHOD__ ) ;
     $this->_msgManager->sendMessage( $to, $msg, $conversationId ) ;
-
-    return true ;
   }
 
 

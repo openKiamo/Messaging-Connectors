@@ -174,11 +174,11 @@ class KMessagingSampleTwitter implements GenericConnectorInterface
     foreach( $msgArr as $msg )
     {
       $inputMsg = [
-        'id'         => $msg[ "id"      ],
-        'createdAt'  => $msg[ "date"    ],
-        'senderId'   => $msg[ "from"    ],
-        'senderName' => $msg[ "sender"  ],
-        'content'    => $msg[ "message" ],
+        'id'         => $msg[ "id"        ],
+        'createdAt'  => $msg[ "timestamp" ],
+        'senderId'   => $msg[ "from"      ],
+        'senderName' => $msg[ "sender"    ],
+        'content'    => $msg[ "message"   ],
       ] ;
 
       // Special case : history before connector
@@ -527,7 +527,7 @@ class TwMessagingManager
         {
           $messageRecord = [
             'id'           => $message[ 'id'                ],
-            'timestamp'    => $message[ 'created_timestamp' ],
+            'timestamp'    => intval( floor( intval( $message[ 'created_timestamp' ] ) / 1000 ) ),
             'from'         => $message[ 'message_create'    ][ 'sender_id'    ],
             'to'           => $message[ 'message_create'    ][ 'target'       ][ 'recipient_id' ],
             'message'      => $message[ 'message_create'    ][ 'message_data' ][ 'text'         ],
@@ -542,7 +542,7 @@ class TwMessagingManager
         $newMsgNb++  ;
         $messageRecord = [
           'id'           => $message[ 'id'                ],
-          'timestamp'    => $message[ 'created_timestamp' ],
+          'timestamp'    => intval( floor( intval( $message[ 'created_timestamp' ] ) / 1000 ) ),
           'from'         => $message[ 'message_create'    ][ 'sender_id'    ],
           'to'           => $message[ 'message_create'    ][ 'target'       ][ 'recipient_id' ],
           'message'      => $message[ 'message_create'    ][ 'message_data' ][ 'text'         ],

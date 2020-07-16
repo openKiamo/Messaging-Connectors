@@ -122,7 +122,7 @@ class KMessagingSampleCommandLine implements GenericConnectorInterface
       $this->log( "==> New message : " . json_encode( $msg ), ClLogger::LOG_TRACE, __METHOD__ ) ;
       $inputMsg = [
         'id'         => $msg[ "id"       ],
-        //'createdAt'  => $msg[ "date"     ],
+        'createdAt'  => time(),
         'senderId'   => $msg[ "uuid"     ],
         'senderName' => $msg[ "username" ],
         'content'    => $msg[ "message"  ],

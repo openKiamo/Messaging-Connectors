@@ -397,6 +397,7 @@ class OrMessagingManager
     {
       $messageRecord[ 'createdAt' ] = $message[ 'timestamp' ] ;
     }
+    /*
     else if( array_key_exists( 'sendDate', $message ) )
     {
       $messageRecord[ 'createdAt' ] = $message[ 'sendDate' ] ;
@@ -407,6 +408,7 @@ class OrMessagingManager
     }
     $messageRecord[ 'utcDate'     ] = OrDatetimes::universalDateConversion( $messageRecord[ 'createdAt' ], $this->inDateFormat, $this->outDateFormat, $this->outTimezone ) ;
     $messageRecord[ 'timestamp'   ] = OrDatetimes::dateToTs( $messageRecord[ 'utcDate' ], $this->timestampFormat ) ;
+    */
 
     return $messageRecord ;
   }
